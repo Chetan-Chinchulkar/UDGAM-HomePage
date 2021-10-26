@@ -6,7 +6,30 @@
 .container{
     /* width: 85%; */
     margin: auto;
+
     padding-left: 10vw;
     padding-right: 10vw;
-    
+ 
+}
+nav{
+    background-color: rgba(0, 0, 0, 0.801);
+    color: white;
+}
+
+*{
+    font-style: Texta;
+    font-weight: 800;
+    color: white;
+}
+#speaker-bg{
+    background-image: url("/W7b3eDUb_2I.png");
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: scroll;
+    height: 44vh;
+}
+.button{
+   
+
 }
