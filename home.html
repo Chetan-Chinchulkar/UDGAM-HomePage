@@ -16,8 +16,28 @@
 <body>
 
     <!-- Test Navbar -->
+    <nav>
+        <div class="container nav-wrap">
+            <div class="leftnav">
+                <a href=""> Home </a>
+                <a href=""> Events </a>
+                <a href=""> Speakers </a>
+                <a href=""> FAQ </a>
+            </div>
+            <div class="midnav">
+                <a href="#"> logo </a>
+            </div>
+            <div class="rightnav">
+                <a href=""> Home </a>
+                <a href=""> Events </a>
+                <a href=""> Speakers </a>
+                <a href=""> FAQ </a>
+            </div>
+            
+        </div>
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+    </nav>
+    <!-- <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="#">Brand </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
           <i class="navbar-toggler-icon"></i>
@@ -29,14 +49,60 @@
           <li class="nav-item"><a class="nav-link" href="#"> Services </a></li>
           </ul>
           <a class="btn btn-warning" href="#">Button</a>
-        </div> <!-- navbar-collapse.// -->
-    </nav>
+        </div> 
+    </nav> -->
+    
     
       <!-- ---------------------------------------------------------- -->
-      <!-- Events Section -->
+      
+
+    
 
     <div class="main">
-        <div style="height: 90vh;"></div>
+        <!--
+
+            <div style="height: 90vh; border:solid red 10px;"></div>
+        -->
+        
+        <!-- Title Section -->
+        <section class="section-padding">
+            <div class="container" id="title">
+                <div class="row justify-content-around">
+                    <div class="col col-lg-1"></div>
+                    <div class="col col-lg-6 align-self-start">
+                            UDGAM
+                    </div>
+                    <div class="col-lg-5 col-xs-1"></div>
+                </div>
+                <div class="row justify-content-around">
+                    <div class="col-lg-7 col-xs-1"></div>
+                    <div class="col col-lg-5 align-self-end">
+                            2022
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+         
+        <section class="section-padding">
+            <div class="container" id="register">
+                <div class="row">
+                    <div class="col col-5">
+                        
+                    </div>
+                    <div class="col col-3">
+                        <button style="color: #333333;">
+                            REGISTER
+                        </button>
+                    </div>
+                    <div class="col col-4">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Events Section -->
         <section class="section-padding">
             
             <br><br><br>
@@ -62,10 +128,9 @@
                     </div>
                 </div>
                 
-                <br>
-                <br>
-                <br>
-                <br>          
+                <!-- Gap for icon-->
+                <div style="height: 40vh; border-color: red;"></div>
+                <!-------------------->
                 
                 <div class="container">
                     <div class="col-lg-12 col-xs-12" >
@@ -169,26 +234,33 @@
             <br>
             <br>
 
-            <div class="container" style="padding-left: 11vw;">
+            <div class="container" style="padding-left: 2vw;">
                 
                 <div class="row">
                     
-                    <div id="speaker-bg" class="col-lg-3 col-xs-6">
-                        <div class="col-auto">
-                            <button type="button" class="btn btn-outline-light">
-                                >
-                            </button>
+                    <div id="speaker-bg" class="col-lg-3 col-xs-6 col-sm-12">
+                        
+                        <div class="row">
+
+                            <div class="col align-self-end">
+                                <button type="button" class="btn btn-outline-light">
+                                    >
+                                </button>
+                            </div>
+                            
                         </div>
+                        
+                        
                         <div class="row">
                             
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto"  id="speaker-name">
                                 Jimmy Wales
                             </div>
                             
                         </div>
                         <div class="row">
 
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto" id="speaker-company">
                                 Wikipedia
                             </div>
                             
@@ -196,7 +268,8 @@
                         
                     </div>
 
-                    <div id="speaker-bg" class="col-lg-3 col-xs-6">
+                 
+                    <div id="speaker-bg" class="col-lg-3 col-xs-6 col-sm-12">
                         <div class="col-auto">
                             <button type="button" class="btn btn-outline-light">
                                 >
@@ -204,14 +277,14 @@
                         </div>
                         <div class="row">
                             
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto"  id="speaker-name">
                                 Jimmy Wales
                             </div>
                             
                         </div>
                         <div class="row">
 
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto" id="speaker-company">
                                 Wikipedia
                             </div>
                             
@@ -219,7 +292,7 @@
                         
                     </div>
 
-                    <div id="speaker-bg" class="col-lg-3 col-xs-6">
+                    <div id="speaker-bg" class="col-lg-3 col-xs-6 col-sm-12">
                         <div class="col-auto">
                             <button type="button" class="btn btn-outline-light">
                                 >
@@ -227,14 +300,14 @@
                         </div>
                         <div class="row">
                             
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto"  id="speaker-name">
                                 Jimmy Wales
                             </div>
                             
                         </div>
                         <div class="row">
 
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto" id="speaker-company">
                                 Wikipedia
                             </div>
                             
@@ -242,7 +315,7 @@
                         
                     </div>
 
-                    <div id="speaker-bg" class="col-lg-3 col-xs-6">
+                    <div id="speaker-bg" class="col-lg-3 col-xs-6 col-sm-12">
                         <div class="col-auto">
                             <button type="button" class="btn btn-outline-light">
                                 >
@@ -250,14 +323,14 @@
                         </div>
                         <div class="row">
                             
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto"  id="speaker-name">
                                 Jimmy Wales
                             </div>
                             
                         </div>
                         <div class="row">
 
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto" id="speaker-company">
                                 Wikipedia
                             </div>
                             
@@ -271,7 +344,7 @@
 
                 <div class="row">
                     
-                    <div id="speaker-bg" class="col-lg-3 col-xs-6">
+                    <div id="speaker-bg" class="col-lg-3 col-xs-6 col-sm-12">
                         <div class="col-auto">
                             <button type="button" class="btn btn-outline-light">
                                 >
@@ -279,14 +352,14 @@
                         </div>
                         <div class="row">
                             
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto"  id="speaker-name">
                                 Jimmy Wales
                             </div>
                             
                         </div>
                         <div class="row">
 
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto" id="speaker-company">
                                 Wikipedia
                             </div>
                             
@@ -294,7 +367,7 @@
                         
                     </div>
 
-                    <div id="speaker-bg" class="col-lg-3 col-xs-6">
+                    <div id="speaker-bg" class="col-lg-3 col-xs-6 col-sm-12">
                         <div class="col-auto">
                             <button type="button" class="btn btn-outline-light">
                                 >
@@ -302,14 +375,14 @@
                         </div>
                         <div class="row">
                             
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto"  id="speaker-name">
                                 Jimmy Wales
                             </div>
                             
                         </div>
                         <div class="row">
 
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto" id="speaker-company">
                                 Wikipedia
                             </div>
                             
@@ -317,7 +390,7 @@
                         
                     </div>
 
-                    <div id="speaker-bg" class="col-lg-3 col-xs-6">
+                    <div id="speaker-bg" class="col-lg-3 col-xs-6 col-sm-12">
                         <div class="col-auto">
                             <button type="button" class="btn btn-outline-light">
                                 >
@@ -325,14 +398,14 @@
                         </div>
                         <div class="row">
                             
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto"  id="speaker-name">
                                 Jimmy Wales
                             </div>
                             
                         </div>
                         <div class="row">
 
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto" id="speaker-company">
                                 Wikipedia
                             </div>
                             
@@ -341,7 +414,7 @@
                     </div>
 
 
-                    <div id="speaker-bg" class="col-lg-3 col-xs-6">
+                    <div id="speaker-bg" class="col-lg-3 col-xs-6 col-sm-12">
                         <div class="col-auto">
                             <button type="button" class="btn btn-outline-light">
                                 >
@@ -349,14 +422,14 @@
                         </div>
                         <div class="row">
                             
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto"  id="speaker-name">
                                 Jimmy Wales
                             </div>
                             
                         </div>
                         <div class="row">
 
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto" id="speaker-company">
                                 Wikipedia
                             </div>
                             
@@ -371,7 +444,7 @@
              
                 <div class="row">
                     
-                    <div id="speaker-bg" class="col-lg-3 col-xs-6">
+                    <div id="speaker-bg" class="col-lg-3 col-xs-6 col-sm-12">
                         <div class="col-auto">
                             <button type="button" class="btn btn-outline-light">
                                 >
@@ -379,14 +452,14 @@
                         </div>
                         <div class="row">
                             
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto"  id="speaker-name">
                                 Jimmy Wales
                             </div>
                             
                         </div>
                         <div class="row">
 
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto" id="speaker-company">
                                 Wikipedia
                             </div>
                             
@@ -394,7 +467,7 @@
                         
                     </div>
 
-                    <div id="speaker-bg" class="col-lg-3 col-xs-6">
+                    <div id="speaker-bg" class="col-lg-3 col-xs-6 col-sm-12">
                         <div class="col-auto">
                             <button type="button" class="btn btn-outline-light">
                                 >
@@ -402,14 +475,14 @@
                         </div>
                         <div class="row">
                             
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto"  id="speaker-name">
                                 Jimmy Wales
                             </div>
                             
                         </div>
                         <div class="row">
 
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto" id="speaker-company">
                                 Wikipedia
                             </div>
                             
@@ -417,7 +490,7 @@
                         
                     </div>
 
-                    <div id="speaker-bg" class="col-lg-3 col-xs-6">
+                    <div id="speaker-bg" class="col-lg-3 col-xs-6 col-sm-12">
                         <div class="col-auto">
                             <button type="button" class="btn btn-outline-light">
                                 >
@@ -425,14 +498,14 @@
                         </div>
                         <div class="row">
                             
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto"  id="speaker-name">
                                 Jimmy Wales
                             </div>
                             
                         </div>
                         <div class="row">
 
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto" id="speaker-company">
                                 Wikipedia
                             </div>
                             
@@ -440,7 +513,7 @@
                         
                     </div>
 
-                    <div id="speaker-bg" class="col-lg-3 col-xs-6">
+                    <div id="speaker-bg" class="col-lg-3 col-xs-6 col-sm-12">
                         <div class="col-auto">
                             <button type="button" class="btn btn-outline-light">
                                 >
@@ -448,14 +521,14 @@
                         </div>
                         <div class="row">
                             
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto"  id="speaker-name">
                                 Jimmy Wales
                             </div>
                             
                         </div>
                         <div class="row">
 
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto" id="speaker-company">
                                 Wikipedia
                             </div>
                             
@@ -469,7 +542,7 @@
                 
                 <div class="row">
                     
-                    <div id="speaker-bg" class="col-lg-3 col-xs-6">
+                    <div id="speaker-bg" class="col-lg-3 col-xs-6 col-sm-12">
                         <div class="col-auto">
                             <button type="button" class="btn btn-outline-light">
                                 >
@@ -477,14 +550,14 @@
                         </div>
                         <div class="row">
                             
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto"  id="speaker-name">
                                 Jimmy Wales
                             </div>
                             
                         </div>
                         <div class="row">
 
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto" id="speaker-company">
                                 Wikipedia
                             </div>
                             
@@ -492,7 +565,7 @@
                         
                     </div>
 
-                    <div id="speaker-bg" class="col-lg-3 col-xs-6">
+                    <div id="speaker-bg" class="col-lg-3 col-xs-6 col-sm-12">
                         <div class="col-auto">
                             <button type="button" class="btn btn-outline-light">
                                 >
@@ -500,14 +573,14 @@
                         </div>
                         <div class="row">
                             
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto"  id="speaker-name">
                                 Jimmy Wales
                             </div>
                             
                         </div>
                         <div class="row">
 
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto" id="speaker-company">
                                 Wikipedia
                             </div>
                             
@@ -515,7 +588,7 @@
                         
                     </div>
 
-                    <div id="speaker-bg" class="col-lg-3 col-xs-6">
+                    <div id="speaker-bg" class="col-lg-3 col-xs-6 col-sm-12">
                         <div class="col-auto">
                             <button type="button" class="btn btn-outline-light">
                                 >
@@ -523,14 +596,14 @@
                         </div>
                         <div class="row">
                             
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto"  id="speaker-name">
                                 Jimmy Wales
                             </div>
                             
                         </div>
                         <div class="row">
 
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto" id="speaker-company">
                                 Wikipedia
                             </div>
                             
@@ -539,7 +612,7 @@
                     </div>
 
 
-                    <div id="speaker-bg" class="col-lg-3 col-xs-6">
+                    <div id="speaker-bg" class="col-lg-3 col-xs-6 col-sm-12">
                         <div class="col-auto">
                             <button type="button" class="btn btn-outline-light">
                                 >
@@ -547,14 +620,14 @@
                         </div>
                         <div class="row">
                             
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto"  id="speaker-name">
                                 Jimmy Wales
                             </div>
                             
                         </div>
                         <div class="row">
 
-                            <div class="col-auto mr-auto">
+                            <div class="col-auto mr-auto" id="speaker-company">
                                 Wikipedia
                             </div>
                             
@@ -563,7 +636,7 @@
                     </div>
                     
                 </div>
-
+            
             </div>
 
             <br>
@@ -572,31 +645,43 @@
             <br>
             <br>
         </section>
-    </div>
-       
-    <footer>
-        <div class="container-fluid">
-            <div class="col-sm-1"></div>
-            <div class="footer_content col-sm-4" style="color: white;">
-                Copyright © 2022 UDGAM Creatives, All rights reserved. 
-            </div class="col-sm-4">
-                <a herf="https://www.facebook.com/">
-                    <img class="facebook button" src="static files\facebook.svg" style="width: 32px; height:32px;">
-                </a>
-                <a herf="https://www.facebook.com/">
-                    <img class="twitter button" src="static files\twitter.svg" style="width: 32px; height:32px;">
-                </a>
-                <a herf="https://www.facebook.com/">
-                    <img class="linkedin button" src="static files\linkedin.svg" style="width: 32px; height:32px;">
-                </a>
-                <a herf="https://www.facebook.com/">
-                    <img class="discord button" src="static files\discord.svg" style="width: 32px; height:32px;">
-                </a>
-                <a herf="https://www.youtube.com/">
-                    <img class="discord button" src="static files\youtube.svg" style="width: 32px; height:32px;">
-                </a>
+
+        <div id="FAQsection" class="container">
+            <div>
+                <div class="FAQheading" >
+                    <h1 style="size: 72; color: #FB750E;">FAQ</h1>
+                </div>
+                <div class="FAQsubtext" style="size: 72; font-family: Texta;">
+                    We know you have your doubts. The Best people do.
+                </div>
             </div>
-            <div class="col-sm-3"></div>
+        </div>
+    <!-- <hr> -->
+    </div>
+
+    
+    <footer>
+        <div class="container row ">
+                <div id="footer_content" style="color: white;">
+                    Copyright © 2022 UDGAM Creatives, All rights reserved.
+                </div>
+                <div id="footer_icons">
+                    <a herf="https://www.facebook.com/" id="footer_icons">
+                        <img class="facebook button" src="static files\facebook.svg" style="width: 32px; height:32px;">
+                    </a>
+                    <a herf="https://www.facebook.com/" id="footer_icons">
+                        <img class="twitter button" src="static files\twitter.svg" style="width: 32px; height:32px;">
+                    </a>
+                    <a herf="https://www.facebook.com/" id="footer_icons">
+                        <img class="linkedin button" src="static files\linkedin.svg" style="width: 32px; height:32px;">
+                    </a>
+                    <a herf="https://www.facebook.com/" id="footer_icons">
+                        <img class="discord button" src="static files\discord.svg" style="width: 32px; height:32px;">
+                    </a>
+                    <a herf="https://www.youtube.com/" id="footer_icons" class ="footer_icons_last" >
+                        <img class="discord button" src="static files\youtube.svg" style="width: 32px; height:32px;">
+                    </a>
+                </div>
         </div>
     </footer>
         
