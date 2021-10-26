@@ -4,7 +4,9 @@
 }
 
 .container{
-    width: 85%;
+    /* width: 85%; */
     margin: auto;
-    /* max-width: 1200px; */
+    padding-left: 10vw;
+    padding-right: 10vw;
+    
 }
