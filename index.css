@@ -58,12 +58,14 @@
 }
 
 #title{
-    font-size: 25vh;
+    font-size: 20vh;
+    font-weight: 800;
 }
 #register{
     font-size: 3vh;
     
 }
+
 
 /* ############################## speaker section styling ################################# */
 .speaker-info{
@@ -75,6 +77,38 @@
 .speaker-info .speaker{
     position: relative;
     margin-bottom: 30px;
+
+#speaker-bg{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width:10%;
+  display:inline-block;
+  padding-top:10%;
+  position:absolute;
+  overflow:hidden !important;
+  border-radius:10%;
+  -webkit-filter: blur(0px); -moz-filter: blur(0px); -o-filter: blur(0px); -ms-filter: blur(0px); filter: blur(0px);/*prevents image from overflowing*/
+}
+#speaker-bg img{
+    position:absolute;
+    min-width:calc(100% + 30px);
+    height:calc(100% + 30px);
+    left:-15px;
+    right:-15px;
+    top:-15px;
+    bottom:-15px;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    transform: translateZ(0.1px)
+  }
+  
+  .blur{
+          -webkit-filter: blur(5px); -moz-filter: blur(5px); -o-filter: blur(5px); -ms-filter: blur(5px); filter: blur(5px);
+  }
+#speaker-name{
+    font-size: 5vh;
+
 }
 
 .speaker-icon, .speaker-content{
@@ -89,12 +123,24 @@
     background-color: red;
 }
 
+
 .speaker-content{
     box-sizing: border-box !important;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.658);
     width: 100%;
     padding: 12px 10px;
+
+#speaker-company{
+    font-size: 2vh;transform: translate(-50%,-50%);
+    width:10%;
+    display:inline-block;
+    padding-top:10%;
+    position:absolute;
+    overflow:hidden !important;
+    border-radius:10%;
+    -webkit-filter: blur(0px); -moz-filter: blur(0px); -o-filter: blur(0px); -ms-filter: blur(0px); filter: blur(0px);/*prevents image from overflowing*/
+
 }
 
 .speaker-content .speaker-name{
