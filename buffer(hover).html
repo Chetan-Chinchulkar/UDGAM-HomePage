@@ -78,8 +78,8 @@
                     <div class="col-lg-5 col-xs-1"></div>
                 </div>
                 <div class="row justify-content-around">
-                    <div class="col-lg-7 col-xs-1"></div>
-                    <div class="col col-lg-5 align-self-end">
+                    <div class="col col-lg-6 col-xs-1"></div>
+                    <div class="col col-lg-6 align-self-end">
                             2022
                     </div>
                     
@@ -141,14 +141,13 @@
                         
                             <div class="row justify-content-left">
                                 
-                                <div class="row">
+                                <div >
                                     <h2>
                                         <strong style="color:#00b0e0;">
                                             EVENTS INCLUDED WITH THE UDGAM PASS
                                         </strong>  
                                     </h2>
                                 </div>
-                                
                                 
                             </div>
                         
@@ -158,10 +157,10 @@
                 <br>
                 <br>
 
-                <div class="container" >
-                    <div class="row justify-content-between" >
+                <div class="container">
+                    <div class="row">
                         
-                        <div class="col-lg-5 col-xs-12" style="border: 2px solid white;padding: 1rem 0 1rem 1rem;">
+                        <div class="col-lg-6 col-xs-12">
                                 
                                 <div>
                                     <h3>
@@ -182,7 +181,7 @@
                         </div>
 
                         
-                        <div class="col-lg-5 col-xs-12"  style="border: 2px solid white;padding: 1rem 1rem 1rem 0;">
+                        <div class="col-lg-6 col-xs-12">
                                 
                             <div>
                                 <h3>
@@ -245,14 +244,120 @@
                 Add Speakers here               >>>>>> Dhruvesh
             -->
 
+
             
+<!--
+
+
+            <div class="container">
+                            
+                <div class="row justify-content-between" id="speaker-row">
+                    <div class="speaker-bg">
+                        <img class="blur" src="http://budgetstockphoto.com/bamers/stock_photo_spectrum.jpg"/>
+                        <div class="">
+                            <h5>Jimmy Wales</h5>
+                            <p>Wikipedia</p>
+                          </div>
+                        
+                    </div>
+                    <div class="speaker-bg">
+                        <img class="blur" src="http://budgetstockphoto.com/bamers/stock_photo_spectrum.jpg"/>
+                    
+                        
+                    </div>
+                    <div class="speaker-bg">
+                        <img class="blur" src="http://budgetstockphoto.com/bamers/stock_photo_spectrum.jpg"/>
+                    
+                        
+                    </div>
+                    <div class="speaker-bg">
+                        <img class="blur" src="http://budgetstockphoto.com/bamers/stock_photo_spectrum.jpg"/>
+                    
+                        
+                    </div>
+   
+
+              
+                    <div id="speaker-bg" class="col-lg-3 col-xs-6 col-sm-12 col-md-6">
+                        <div class="col-auto">
+                            <button type="button" class="btn btn-outline-light">
+                                >
+                            </button>
+                        </div>
+                        <div class="row">
+                            
+                            <div class="col-auto mr-auto"  id="speaker-name">
+                                Jimmy Wales
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+
+                            <div class="col-auto mr-auto" id="speaker-company">
+                                Wikipedia
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+
+                    <div id="speaker-bg" class="col-lg-3 col-xs-6 col-sm-12 col-md-6">
+                        <div class="col-auto">
+                            <button type="button" class="btn btn-outline-light">
+                                >
+                            </button>
+                        </div>
+                        <div class="row">
+                            
+                            <div class="col-auto mr-auto"  id="speaker-name">
+                                Jimmy Wales
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+
+                            <div class="col-auto mr-auto" id="speaker-company">
+                                Wikipedia
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+
+                    <div id="speaker-bg" class="col-lg-3 col-xs-6 col-sm-12 col-md-6">
+                        <div class="col-auto">
+                            <button type="button" class="btn btn-outline-light">
+                                >
+                            </button>
+                        </div>
+                        <div class="row">
+                            
+                            <div class="col-auto mr-auto"  id="speaker-name">
+                                Jimmy Wales
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+
+                            <div class="col-auto mr-auto" id="speaker-company">
+                                Wikipedia
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                
+                </div>
+
+                <br><br>
+
             <br>
             <br>
             <br>
             <br>
             <br>
         </section>
-
+    -->
         <div id="FAQsection" class="container">
             <div>
                 <div class="FAQheading" >
@@ -303,6 +408,13 @@
     <script>
         $(window).scroll(function(){
             $('nav').toggleClass('scrolled',$(this).scrollTop()>30);
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('img').hover(function(){
+                $(this).toggleClass('blur');
+            });	
         });
     </script>
 </body>
