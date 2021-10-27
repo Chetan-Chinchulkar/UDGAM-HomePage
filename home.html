@@ -254,11 +254,35 @@
         <div id="FAQsection" class="container">
             <div>
                 <div class="FAQheading" >
-                    <h1 style="size: 72; color: #FB750E;">FAQ</h1>
+                    <p style="font-size: 9vh; color: #FB750E;">FAQ</p>
                 </div>
-                <div class="FAQsubtext" style="size: 72; font-family: Texta;">
-                    We know you have your doubts. The Best people do.
+                <div class="FAQsubtext" style="font-family: Texta;">
+                    <p style="font-size: 3vh; font-weight: 500;  letter-spacing: 0.5px;">We know you have your doubts. The Best people do.</p>
                 </div>
+            </div>
+            <br>
+            <div class="faqdropdown">
+                <div class="faquestion" onlick="faqdrop(0)">
+                    What is UDGAM?
+                </div>
+                <hr style="width:100%; background-color:white; align-self: center;">
+                <div class="faquestion" onlick="faqdrop(0)">
+                    What is UDGAM?
+                </div>
+                <hr style="width:100%; background-color:white; align-self: center;">
+                <div class="faquestion" onlick="faqdrop(0)">
+                    What is UDGAM?
+                </div>
+                <hr style="width:100%; background-color:white; align-self: center;">
+                <div class="faquestion" onlick="faqdrop(0)">
+                    What is UDGAM?
+                </div>
+                <hr style="width:100%; background-color:white; align-self: center;">
+                <div class="faquestion" onlick="faqdrop(0)">
+                    What is UDGAM?
+                </div>
+                <hr style="width:100%; background-color:white; align-self: center;">
+                <br><br><br>
             </div>
         </div>
     <!-- <hr> -->
@@ -266,32 +290,31 @@
 
     
     <footer>
-        <div class="container row ">
+        <div id="footer_main" class="container row">
+            <div id="footer_container">
                 <div id="footer_content">
                     Copyright © 2022 UDGAM Creatives, All rights reserved.
                 </div>
                 <div id="footer_icons">
-                    <a herf="https://www.facebook.com/" id="footer_icons">
+                    <a herf="https://www.facebook.com/" id="footer_icons2">
                         <img class="facebook button" src="static files\facebook.svg" style="width: 32px; height:32px;">
                     </a>
-                    <a herf="https://www.facebook.com/" id="footer_icons">
+                    <a herf="https://www.facebook.com/" id="footer_icons2">
                         <img class="twitter button" src="static files\twitter.svg" style="width: 32px; height:32px;">
                     </a>
-                    <a herf="https://www.facebook.com/" id="footer_icons">
+                    <a herf="https://www.facebook.com/" id="footer_icons2">
                         <img class="linkedin button" src="static files\linkedin.svg" style="width: 32px; height:32px;">
                     </a>
-                    <a herf="https://www.facebook.com/" id="footer_icons">
+                    <a herf="https://www.facebook.com/" id="footer_icons2">
                         <img class="discord button" src="static files\discord.svg" style="width: 32px; height:32px;">
                     </a>
-                    <a herf="https://www.youtube.com/" id="footer_icons" class ="footer_icons_last" >
+                    <a herf="https://www.youtube.com/" id="footer_icons2" class ="footer_icons_last" >
                         <img class="discord button" src="static files\youtube.svg" style="width: 32px; height:32px;">
                     </a>
                 </div>
+            </div>
         </div>
     </footer>
-        
-
-
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
@@ -302,6 +325,30 @@
         $(window).scroll(function(){
             $('nav').toggleClass('scrolled',$(this).scrollTop()>30);
         });
+        
+        function faqdrop(number){
+            switch(number) {
+                case 1:  
+                    // body of case 1
+                    break;
+
+                case 2:  
+                    // body of case 2
+                    break;
+
+                case 3:
+                    // body of case N
+                    break;
+
+                default:
+                    // body of default
+                    let content = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quibusdam perspiciatis iusto ut magnam voluptates, aut esse, quod, corporis a nam odit voluptatibus sint tempore doloremque. Quod sunt aspernatur "
+            }
+            let answer = document.getElementById('faqanswer'+number);
+            if(answer.innerHTML()== NULL){
+                answer.innerHTML() = content;
+            }
+        }
     </script>
 </body>
 </html>
