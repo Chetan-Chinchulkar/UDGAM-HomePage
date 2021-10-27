@@ -66,6 +66,18 @@
     
 }
 
+
+/* ############################## speaker section styling ################################# */
+.speaker-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.speaker-info .speaker{
+    position: relative;
+    margin-bottom: 30px;
+
 #speaker-bg{
   top: 50%;
   left: 50%;
@@ -96,12 +108,28 @@
   }
 #speaker-name{
     font-size: 5vh;
+
 }
 
-#speaker-name::first-letter{
-    color: #fc0144;
+.speaker-icon, .speaker-content{
+    position: absolute;
 }
 
+.speaker-icon{
+    top: 0.75em;
+    right: 0.5em;
+    height: 1.5em;
+    width: 1.5em;
+    background-color: red;
+}
+
+
+.speaker-content{
+    box-sizing: border-box !important;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.658);
+    width: 100%;
+    padding: 12px 10px;
 
 #speaker-company{
     font-size: 2vh;transform: translate(-50%,-50%);
@@ -112,11 +140,28 @@
     overflow:hidden !important;
     border-radius:10%;
     -webkit-filter: blur(0px); -moz-filter: blur(0px); -o-filter: blur(0px); -ms-filter: blur(0px); filter: blur(0px);/*prevents image from overflowing*/
+
 }
 
-#speaker-row{
-    display: flex;
-    justify-content: space-between;
+.speaker-content .speaker-name{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.speaker-content .speaker-name::first-letter{
+    color: #f00;
+    font-size: 27px;
+}
+
+.speaker-content .speaker-company{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 500;
 }
 
 footer{
