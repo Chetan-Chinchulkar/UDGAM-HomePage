@@ -514,23 +514,23 @@
     
     
     <script>
-        $(document). ready (function() {
-            $('.modal').on('show.bs.modal', function() {
-                if ( !$(this).parent ().is ( 'body') )
+        $(document).ready(function() {
+            $('.modal').on('show.bs.modal',function() {
+                if ( !$(this).parent().is('body') )
                 {
                     $(this).appendTo("body");
                 }
-                $(this). removeClass( 'blur')
+                $(this).removeClass('blur')
                 $ ('body').children().not(this).addClass('blur');
             })
-                .on('hide.bs.modal', function() {
+                .on('hide.bs.modal',function() {
                     var modal = $('.modal.show').not(this);
                     modal = modal.eg(modal.length - 1);
                     var blurItems = $('body').children().not(this) ;
                 if ( modal.length ){
-                    modal.removeClass ('blur') ;
+                    modal.removeClass('blur') ;
                 } else {
-                blurItems.removeClass ('blur' ) ;
+                blurItems.removeClass('blur' ) ;
                 }
             })
         })
