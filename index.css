@@ -1,3 +1,9 @@
+*{
+    font-style: Texta;
+    font-weight: 600;
+    color: white;
+}
+
 .main {
     background-image: url("static files/bkgrd 1.png"),url("static files/bkgrd 2.png"),url("static files/bkgrd 3.png");
     background-size: 100% ;
@@ -51,12 +57,6 @@
     color: white;
 }
 
-*{
-    font-style: Texta;
-    font-weight: 600;
-    color: white;
-}
-
 #title{
     font-size: 20vh;
     font-weight: 800;
@@ -78,7 +78,10 @@
     position: relative;
     margin-bottom: 30px;
     width: 22%;
+    margin: 10px;
+    min-width: 218.75px;
 }
+
 .speaker-info .speaker img{
     display: block;
     width: 100%;
@@ -96,24 +99,12 @@
     background-color: red;
 }
 
-
 .speaker-content{
     box-sizing: border-box !important;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.658);
     width: 100%;
-    padding: 12px 10px;
-}
-
-.speaker-company{
-    font-size: 2vh;transform: translate(-50%,-50%);
-    width:10%;
-    display:inline-block;
-    padding-top:10%;
-    position:absolute;
-    overflow:hidden !important;
-    border-radius:10%;
-    -webkit-filter: blur(0px); -moz-filter: blur(0px); -o-filter: blur(0px); -ms-filter: blur(0px); filter: blur(0px);/*prevents image from overflowing*/
+    padding: 0.5em 10px;
 }
 
 .speaker-content .speaker-name{
