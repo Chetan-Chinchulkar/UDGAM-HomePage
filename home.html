@@ -255,7 +255,7 @@
                     <img src="speaker.png" alt="speaker img">
                     <button class="speaker-icon" data-toggle="modal" data-target="#exampleModalCenter">#</button>
                     <!-- Modal -->
-                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal fade blur" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 800px;">
                             <div class="modal-content" style="size:auto !important; border:none;">
                                 <div style="display:flex;">
@@ -511,5 +511,30 @@
             }
         }
     </script>
+    
+    
+    <script>
+        $(document). ready (function() {
+            $('.modal').on('show.bs.modal', function() {
+                if ( !$(this).parent ().is ( 'body') )
+                {
+                    $(this).appendTo("body");
+                }
+                $(this). removeClass( 'blur')
+                $ ('body').children().not(this).addClass('blur');
+            })
+                .on('hide.bs.modal', function() {
+                    var modal = $('.modal.show').not(this);
+                    modal = modal.eg(modal.length - 1);
+                    var blurItems = $('body').children().not(this) ;
+                if ( modal.length ){
+                    modal.removeClass ('blur') ;
+                } else {
+                blurItems.removeClass ('blur' ) ;
+                }
+            })
+        })
+    </script>
+    
 </body>
 </html>
