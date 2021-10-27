@@ -152,6 +152,12 @@ body {
     opacity: 0;
 }
 */
+
+
+.blur{
+    filter: blur(5px) brightness(100%);
+}
+
 .speaker {
     position: relative;
     
