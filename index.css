@@ -1,3 +1,14 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 .main {
     background-image: url("static files/bkgrd 1.png"),url("static files/bkgrd 2.png"),url("static files/bkgrd 3.png");
     background-size: 100% ;
@@ -180,8 +191,4 @@ footer{
 #footer_icons2{
     padding-left: 0.7%;
     padding-right: 0.7%;
-}
-
-.footer_icons_last{
-    /* right: 0px; */
 }
