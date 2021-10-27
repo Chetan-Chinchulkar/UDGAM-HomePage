@@ -144,10 +144,6 @@ footer{
     align-items: center;
 }
 
-#FAQsection {
-    
-} 
-
 .faquestion {
     /* border: 2px solid green; */
     padding-top:2.5vh;
@@ -166,12 +162,11 @@ footer{
 
 .faqdropdown {
     font-size: 5vh;
-    font-style: Texta;
+    /* font-style: Texta; */
 
     /* border: 2px solid white; */
 
 }
-
 
 #footer_icons{
    
