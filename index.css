@@ -75,6 +75,11 @@
 .speaker-info .speaker{
     position: relative;
     margin-bottom: 30px;
+    width: 22%;
+}
+.speaker-info .speaker img{
+    display: block;
+    width: 100%;
 }
 
 .speaker-icon, .speaker-content{
