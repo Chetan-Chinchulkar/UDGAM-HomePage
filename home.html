@@ -338,6 +338,7 @@
 
         </section>
 
+        <br><br>
         <div id="FAQsection" class="container" style="font-family: Texta; font-weight: 600;">
             <div>
                 <div class="FAQheading" >
@@ -351,26 +352,42 @@
             <div class="faqdropdown">
                 <div class="faquestion" onclick='faqdrop(1)'>
                     What is UDGAM?
+                    <svg class="faqanswer1" xmlns="http://www.w3.org/2000/svg" style=" position:absolute; right:11vw; " width="50" height="50" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                    </svg>
                 </div>
                 <div id ="faqanswer1" style="font-size:3vh; padding-left: 1%; padding-right: 1%;"></div>
                 <hr style="width:100%; background-color:white; align-self: center;">
                 <div class="faquestion" onclick="faqdrop(2)">
                     What is UDGAM?
+                    <svg class="faqanswer2" xmlns="http://www.w3.org/2000/svg" style=" position:absolute; right:11vw; " width="50" height="50" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                    </svg>
                 </div>
+    
                 <div id ="faqanswer2" style="font-size:3vh; padding-left: 1%; padding-right: 1%;"></div>
                 <hr style="width:100%; background-color:white; align-self: center;">
                 <div class="faquestion" onclick="faqdrop(3)">
                     What is UDGAM?
+                    <svg class="faqanswer3" xmlns="http://www.w3.org/2000/svg" style=" position:absolute; right:11vw; " width="50" height="50" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                    </svg>
                 </div>
                 <div id ="faqanswer3" style="font-size:3vh; padding-left: 1%; padding-right: 1%;"></div>
                 <hr style="width:100%; background-color:white; align-self: center;">
                 <div class="faquestion" onclick="faqdrop(4)">
                     What is UDGAM?
+                    <svg class="faqanswer4" xmlns="http://www.w3.org/2000/svg" style=" position:absolute; right:11vw; " width="50" height="50" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                    </svg>
                 </div>
                 <div id ="faqanswer4" style="font-size:3vh; padding-left: 1%; padding-right: 1%;"></div>
                 <hr style="width:100%; background-color:white; align-self: center;">
                 <div class="faquestion" onclick="faqdrop(5)">
                     What is UDGAM?
+                    <svg class="faqanswer5" xmlns="http://www.w3.org/2000/svg" style=" position:absolute; right:11vw; " width="50" height="50" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                    </svg>
                 </div>
                 <div id ="faqanswer5" style="font-size:3vh; padding-left: 1%; padding-right: 1%;"></div>
                 <hr style="width:100%; background-color:white; align-self: center;">
@@ -446,9 +463,11 @@
             let answer = document.getElementById(faqstring).innerHTML;
             if(answer == ""){
                 document.getElementById(faqstring).innerHTML = content;
+                document.getElementsByClassName(faqstring)[0].innerHTML = '<path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>';
             }
             else{
                 document.getElementById(faqstring).innerHTML = "";
+                document.getElementsByClassName(faqstring)[0].innerHTML = '<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>';
             }
         }
     </script>
