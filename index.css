@@ -137,18 +137,13 @@ footer{
     
 } 
 
-#faqbutton {
-    width: 100% !important;
-    background-color: transparent;
-
-}
-
 .faquestion {
     /* border: 2px solid green; */
     padding-top:2.5vh;
     padding-bottom:2.5vh;
     align-self: center;
-    font-weight: 500;
+    /* font-weight: 500; */
+    cursor: pointer;
 }
 
 #footer_content{

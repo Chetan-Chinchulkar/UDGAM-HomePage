@@ -338,36 +338,41 @@
 
         </section>
 
-        <div id="FAQsection" class="container">
+        <div id="FAQsection" class="container" style="font-family: Texta; font-weight: 600;">
             <div>
                 <div class="FAQheading" >
                     <p style="font-size: 9vh; color: #FB750E;">FAQ</p>
                 </div>
-                <div class="FAQsubtext" style="font-family: Texta;">
-                    <p style="font-size: 3vh; font-weight: 500;  letter-spacing: 0.5px;">We know you have your doubts. The Best people do.</p>
+                <div class="FAQsubtext">
+                    <p style="font-size: 3vh;   letter-spacing: 0.5px;">We know you have your doubts. The Best people do.</p>
                 </div>
             </div>
             <br>
             <div class="faqdropdown">
-                <div class="faquestion" onlick="faqdrop(0)">
+                <div class="faquestion" onclick='faqdrop(1)'>
                     What is UDGAM?
                 </div>
+                <div id ="faqanswer1" style="font-size:3vh; padding-left: 1%; padding-right: 1%;"></div>
                 <hr style="width:100%; background-color:white; align-self: center;">
-                <div class="faquestion" onlick="faqdrop(0)">
+                <div class="faquestion" onclick="faqdrop(2)">
                     What is UDGAM?
                 </div>
+                <div id ="faqanswer2" style="font-size:3vh; padding-left: 1%; padding-right: 1%;"></div>
                 <hr style="width:100%; background-color:white; align-self: center;">
-                <div class="faquestion" onlick="faqdrop(0)">
+                <div class="faquestion" onclick="faqdrop(3)">
                     What is UDGAM?
                 </div>
+                <div id ="faqanswer3" style="font-size:3vh; padding-left: 1%; padding-right: 1%;"></div>
                 <hr style="width:100%; background-color:white; align-self: center;">
-                <div class="faquestion" onlick="faqdrop(0)">
+                <div class="faquestion" onclick="faqdrop(4)">
                     What is UDGAM?
                 </div>
+                <div id ="faqanswer4" style="font-size:3vh; padding-left: 1%; padding-right: 1%;"></div>
                 <hr style="width:100%; background-color:white; align-self: center;">
-                <div class="faquestion" onlick="faqdrop(0)">
+                <div class="faquestion" onclick="faqdrop(5)">
                     What is UDGAM?
                 </div>
+                <div id ="faqanswer5" style="font-size:3vh; padding-left: 1%; padding-right: 1%;"></div>
                 <hr style="width:100%; background-color:white; align-self: center;">
                 <br><br><br>
             </div>
@@ -414,26 +419,36 @@
         });
         
         function faqdrop(number){
+            let content = "";
             switch(number) {
                 case 1:  
                     // body of case 1
+                    content = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quibusdam perspiciatis iusto ut magnam voluptates, aut esse, quod, corporis a nam odit voluptatibus sint tempore doloremque. Quod sunt aspernatur "
                     break;
 
                 case 2:  
                     // body of case 2
+                    content = "Arpit Mahan hai"
                     break;
 
                 case 3:
-                    // body of case N
+                    content = " Dhruvesh chutiya"
                     break;
-
-                default:
-                    // body of default
-                    let content = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quibusdam perspiciatis iusto ut magnam voluptates, aut esse, quod, corporis a nam odit voluptatibus sint tempore doloremque. Quod sunt aspernatur "
+                case 4:
+                    content = "Chetan chutiya"
+                    break;
+                case 5:
+                    content = "ECELL KI JAI"
+                    break;
             }
-            let answer = document.getElementById('faqanswer'+number);
-            if(answer.innerHTML()== NULL){
-                answer.innerHTML() = content;
+            let faqstring = 'faqanswer';
+            faqstring = faqstring.concat(number)
+            let answer = document.getElementById(faqstring).innerHTML;
+            if(answer == ""){
+                document.getElementById(faqstring).innerHTML = content;
+            }
+            else{
+                document.getElementById(faqstring).innerHTML = "";
             }
         }
     </script>
