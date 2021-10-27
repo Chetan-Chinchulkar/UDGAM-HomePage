@@ -199,7 +199,42 @@ body {
     transform: translateY(0);
 }
 
+.modal-content{
+    color:black;
+    display: flex;
+}
 
+.modalspeaker__img{
+    padding-left: 10%;
+    padding-top: 10%;
+    padding-right: 5%;
+    padding-bottom: 8.3%;
+}
+
+.modalicons{
+    margin-top: 0%;
+    padding-bottom : 30%;
+}
+
+.modalspeakername{
+    color: black;
+    font-size: 250%;
+}
+
+.modalspeakerpostion{
+    color: black;
+    /* font-size: 50%; */
+    /* font-weight: 300px; */
+    padding-bottom: 4%;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.modalspeakerdetails{
+    color: black;
+    font-size: 80%;
+    font-weight: 300px;
+}
 /* ---------------------------------------------------------------------- */
 
 footer{
