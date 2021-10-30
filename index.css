@@ -80,7 +80,7 @@ body {
 /* ################################### more events styling ######################################### */
 .more-events-heading{
     display: flex; 
-    justify-content: space-between;
+    flex-direction: row-reverse;
 }
 .more-events-heading button{
     padding-top: 10px;
@@ -89,6 +89,7 @@ body {
 }
 .more-events{
     display: none;
+    margin-top: 40px;
 }
 
 /* ############################## speaker section styling ################################# */
@@ -143,7 +144,7 @@ body {
     transition: all 0.6s ease;
 }
 .speaker:hover .speaker-side-name{
-    opacity: 1;
+    opacity: 0.7;
     top: 1.7em;
 }
 .speaker-content{
@@ -218,15 +219,22 @@ body {
     /* border: 2px solid red; */
     position: relative;
 }
+<<<<<<< Updated upstream
 .sponsor a{
+=======
+.sponsor-left{
+    /* border: 2px solid blue; */
+}
+.sponsor a,.more-events-heading a{
+>>>>>>> Stashed changes
     text-decoration: none;
 }
-.sponsor a:hover{
-    border-bottom: 2px red solid;
+.sponsor a:hover,.more-events-heading a:hover{
+    border-bottom: 2px #f00 solid;
 }
 .sponsor-icon{
-    border: 2px solid blue;
-    color: blue;
+    border: 2px solid #00b0e0;
+    color: #00b0e0;
     font-size: 16px;
     padding: 2px 5px;
 }

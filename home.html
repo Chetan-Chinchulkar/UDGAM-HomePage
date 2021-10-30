@@ -129,13 +129,9 @@
 
 
             <div class="container">
-                <div class="more-events-heading">
-                    <h2 style="color:#00b0e0;">
-                        EVENTS INCLUDED WITH THE UDGAM PASS
-                    </h2>
-                    <button id="show-more-events" style="color:#00b0e0;" onclick="moreEvents()">show more <i
-                            class="fas fa-chevron-up" style="color:#00b0e0;"></i> </button>
-                </div>
+                <h2 style="color:#00b0e0;">
+                    EVENTS INCLUDED WITH THE UDGAM PASS
+                </h2>
                 <br>
                 <br>
                 <div class="row justify-content-between">
@@ -198,11 +194,9 @@
                     </div>
                 </div>
 
-                <br> 
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  -->
-<div class="row justify-content-between more-events">
-    
-    <div class="col-lg-6 col-xs-12">
+                <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  -->
+                <div class="row justify-content-between more-events">
+                    <div class="col-lg-6 col-xs-12">
 
                         <div
                             style="border: 2px solid white;padding-left: 15px;padding-right: 15px; padding-top: 10px; padding-bottom: 15px;margin-right: 10px;">
@@ -227,20 +221,20 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
 
-                    
+
                     <div class="col-lg-6 col-xs-12">
-                        
+
                         <div
-                        style="border: 2px solid white;padding-left: 15px;padding-right: 15px; padding-top: 10px; padding-bottom: 15px;margin-left: 10px;">
+                            style="border: 2px solid white;padding-left: 15px;padding-right: 15px; padding-top: 10px; padding-bottom: 15px;margin-left: 10px;">
                             <div>
                                 <h3>
                                     Live Events
                                 </h3>
                             </div>
-                            
+
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quibusdam perspiciatis
                                 iusto ut magnam voluptates, aut esse, quod, corporis a nam odit voluptatibus sint
@@ -259,8 +253,8 @@
 
                     </div>
                 </div>
-                <br>
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  -->
+
+                <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  -->
                 <div class="row justify-content-between more-events">
 
                     <div class="col-lg-6 col-xs-12">
@@ -323,7 +317,10 @@
                     </div>
                 </div>
             </div>
-
+            <div class="more-events-heading container">
+                <button id="show-more-events" style="color:#00b0e0;" onclick="moreEvents()">show more <i
+                        class="fas fa-chevron-up" style="color:#00b0e0;"></i> </button>
+            </div>
             <br><br>
         </section>
 
@@ -360,7 +357,7 @@
                         <button class="speaker-icon" data-toggle="modal" data-target="#exampleModalCenter1">
                             <i class="fas fa-chevron-right"></i>
                         </button>
-                        
+
                         <div class="speaker-content">
                             <div class="speaker-name">jimmy wales</div>
                             <div class="speaker-company">Wikipedia </div>
@@ -928,9 +925,14 @@
                         </div>
                     </div>
                 </div>
-                <button id="show-more-speakers" onclick="moreSpeakers()">
+                <!-- <button id="show-more-speakers" onclick="moreSpeakers()">
                     <h1 style="color: black; font-size: 50px;">show more speakers</h1>
-                </button>
+                </button> -->
+                <div class="more-events-heading container">
+                    <a href="#" style="font-size: 20px;color: #00b0e0;"> VIEW ALL SPEAKERS <i class="fas fa-chevron-right sponsor-icon"></i> </a>
+                <br>
+                </div>
+
             </div>
 
             <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ extra speakers below @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
@@ -945,61 +947,61 @@
                     </button>
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModalCenter9" tabindex="-1" role="dialog"
-                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 800px;">
-                        <div class="modal-content" style="size:auto !important; border:none;">
-                            <div style="display:flex;">
-                                <div style="display:flex; background-color: #333333;">
-                                    <div style="padding-right: 0%;">
-                                        <img class="modalspeaker__img" src="speaker.png" alt="speaker img"
-                                            style="width: 100%;">
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 800px;">
+                            <div class="modal-content" style="size:auto !important; border:none;">
+                                <div style="display:flex;">
+                                    <div style="display:flex; background-color: #333333;">
+                                        <div style="padding-right: 0%;">
+                                            <img class="modalspeaker__img" src="speaker.png" alt="speaker img"
+                                                style="width: 100%;">
+                                        </div>
+                                        <div
+                                            style="display:flex; flex-direction: column; padding-right: 5%; padding-left: 0%; padding-top:10%;">
+                                            <a href="https://www.facebook.com/ecell.iitg/" target="_blank"
+                                                class="modalicons">
+                                                <img class="facebook button" src="static files\facebook.svg"
+                                                    style="width: 32px; height:32px;">
+                                            </a>
+                                            <a href="https://www.linkedin.com/company/ecell-iitg/" target="_blank"
+                                                class="modalicons">
+                                                <img class="linkedin button" src="static files\linkedin.svg"
+                                                    style="width: 32px; height:32px;">
+                                            </a>
+                                            <a href="https://www.instagram.com/ecell_iitg/" target="_blank"
+                                                class="modalicons">
+                                                <img class="discord button" src="static files\discord.svg"
+                                                    style="width: 32px; height:32px;">
+                                            </a>
+                                        </div>
                                     </div>
                                     <div
-                                        style="display:flex; flex-direction: column; padding-right: 5%; padding-left: 0%; padding-top:10%;">
-                                        <a href="https://www.facebook.com/ecell.iitg/" target="_blank"
-                                            class="modalicons">
-                                            <img class="facebook button" src="static files\facebook.svg"
-                                                style="width: 32px; height:32px;">
-                                        </a>
-                                        <a href="https://www.linkedin.com/company/ecell-iitg/" target="_blank"
-                                            class="modalicons">
-                                            <img class="linkedin button" src="static files\linkedin.svg"
-                                                style="width: 32px; height:32px;">
-                                        </a>
-                                        <a href="https://www.instagram.com/ecell_iitg/" target="_blank"
-                                            class="modalicons">
-                                            <img class="discord button" src="static files\discord.svg"
-                                                style="width: 32px; height:32px;">
-                                        </a>
+                                        style="max-width: 500px; padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                        <div class="modalspeakername">sundar pichai</div>
+                                        <div class="modalspeakerpostion">Google <svg height="10" width="10">
+                                                <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                    fill="black" />
+                                            </svg> CEO </div>
+                                        <p class="modalspeakerdetails" style="color: black;">Lorem Ipsum is simply
+                                            dummy
+                                            text of the printing and typesetting industry. Lorem Ipsum has been the
+                                            industry's standard dummy text ever since the 1500s, when an unknown
+                                            printer
+                                            took a galley of type and scrambled it to make a type specimen book. It
+                                            has
+                                            survived not only five centuries, but also the leap into electronic
+                                            typesetting, remaining essentially unchanged. It was popularised in the
+                                            1960s with the release of Letraset sheets containing Lorem Ipsum
+                                            passages,
+                                            and more recently with desktop publishing software like Aldus PageMaker
+                                            including versions of Lorem Ipsum.Contrary to popular belief, Lorem
+                                            Ipsum is
+                                            not simply random text.</p>
                                     </div>
-                                </div>
-                                <div
-                                    style="max-width: 500px; padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
-                                    <div class="modalspeakername">sundar pichai</div>
-                                    <div class="modalspeakerpostion">Google <svg height="10" width="10">
-                                            <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
-                                                fill="black" />
-                                        </svg> CEO </div>
-                                    <p class="modalspeakerdetails" style="color: black;">Lorem Ipsum is simply
-                                        dummy
-                                        text of the printing and typesetting industry. Lorem Ipsum has been the
-                                        industry's standard dummy text ever since the 1500s, when an unknown
-                                        printer
-                                        took a galley of type and scrambled it to make a type specimen book. It
-                                        has
-                                        survived not only five centuries, but also the leap into electronic
-                                        typesetting, remaining essentially unchanged. It was popularised in the
-                                        1960s with the release of Letraset sheets containing Lorem Ipsum
-                                        passages,
-                                        and more recently with desktop publishing software like Aldus PageMaker
-                                        including versions of Lorem Ipsum.Contrary to popular belief, Lorem
-                                        Ipsum is
-                                        not simply random text.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
                     <div class="speaker-content">
                         <div class="speaker-name">jimmy wales</div>
                         <div class="speaker-company">Wikipedia </div>
@@ -1092,61 +1094,61 @@
                     </button>
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModalCenter11" tabindex="-1" role="dialog"
-                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 800px;">
-                        <div class="modal-content" style="size:auto !important; border:none;">
-                            <div style="display:flex;">
-                                <div style="display:flex; background-color: #333333;">
-                                    <div style="padding-right: 0%;">
-                                        <img class="modalspeaker__img" src="speaker.png" alt="speaker img"
-                                            style="width: 100%;">
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 800px;">
+                            <div class="modal-content" style="size:auto !important; border:none;">
+                                <div style="display:flex;">
+                                    <div style="display:flex; background-color: #333333;">
+                                        <div style="padding-right: 0%;">
+                                            <img class="modalspeaker__img" src="speaker.png" alt="speaker img"
+                                                style="width: 100%;">
+                                        </div>
+                                        <div
+                                            style="display:flex; flex-direction: column; padding-right: 5%; padding-left: 0%; padding-top:10%;">
+                                            <a href="https://www.facebook.com/ecell.iitg/" target="_blank"
+                                                class="modalicons">
+                                                <img class="facebook button" src="static files\facebook.svg"
+                                                    style="width: 32px; height:32px;">
+                                            </a>
+                                            <a href="https://www.linkedin.com/company/ecell-iitg/" target="_blank"
+                                                class="modalicons">
+                                                <img class="linkedin button" src="static files\linkedin.svg"
+                                                    style="width: 32px; height:32px;">
+                                            </a>
+                                            <a href="https://www.instagram.com/ecell_iitg/" target="_blank"
+                                                class="modalicons">
+                                                <img class="discord button" src="static files\discord.svg"
+                                                    style="width: 32px; height:32px;">
+                                            </a>
+                                        </div>
                                     </div>
                                     <div
-                                        style="display:flex; flex-direction: column; padding-right: 5%; padding-left: 0%; padding-top:10%;">
-                                        <a href="https://www.facebook.com/ecell.iitg/" target="_blank"
-                                            class="modalicons">
-                                            <img class="facebook button" src="static files\facebook.svg"
-                                                style="width: 32px; height:32px;">
-                                        </a>
-                                        <a href="https://www.linkedin.com/company/ecell-iitg/" target="_blank"
-                                            class="modalicons">
-                                            <img class="linkedin button" src="static files\linkedin.svg"
-                                                style="width: 32px; height:32px;">
-                                        </a>
-                                        <a href="https://www.instagram.com/ecell_iitg/" target="_blank"
-                                            class="modalicons">
-                                            <img class="discord button" src="static files\discord.svg"
-                                                style="width: 32px; height:32px;">
-                                        </a>
+                                        style="max-width: 500px; padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                        <div class="modalspeakername">sundar pichai</div>
+                                        <div class="modalspeakerpostion">Google <svg height="10" width="10">
+                                                <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                    fill="black" />
+                                            </svg> CEO </div>
+                                        <p class="modalspeakerdetails" style="color: black;">Lorem Ipsum is simply
+                                            dummy
+                                            text of the printing and typesetting industry. Lorem Ipsum has been the
+                                            industry's standard dummy text ever since the 1500s, when an unknown
+                                            printer
+                                            took a galley of type and scrambled it to make a type specimen book. It
+                                            has
+                                            survived not only five centuries, but also the leap into electronic
+                                            typesetting, remaining essentially unchanged. It was popularised in the
+                                            1960s with the release of Letraset sheets containing Lorem Ipsum
+                                            passages,
+                                            and more recently with desktop publishing software like Aldus PageMaker
+                                            including versions of Lorem Ipsum.Contrary to popular belief, Lorem
+                                            Ipsum is
+                                            not simply random text.</p>
                                     </div>
-                                </div>
-                                <div
-                                    style="max-width: 500px; padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
-                                    <div class="modalspeakername">sundar pichai</div>
-                                    <div class="modalspeakerpostion">Google <svg height="10" width="10">
-                                            <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
-                                                fill="black" />
-                                        </svg> CEO </div>
-                                    <p class="modalspeakerdetails" style="color: black;">Lorem Ipsum is simply
-                                        dummy
-                                        text of the printing and typesetting industry. Lorem Ipsum has been the
-                                        industry's standard dummy text ever since the 1500s, when an unknown
-                                        printer
-                                        took a galley of type and scrambled it to make a type specimen book. It
-                                        has
-                                        survived not only five centuries, but also the leap into electronic
-                                        typesetting, remaining essentially unchanged. It was popularised in the
-                                        1960s with the release of Letraset sheets containing Lorem Ipsum
-                                        passages,
-                                        and more recently with desktop publishing software like Aldus PageMaker
-                                        including versions of Lorem Ipsum.Contrary to popular belief, Lorem
-                                        Ipsum is
-                                        not simply random text.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
                     <div class="speaker-content">
                         <div class="speaker-name">jimmy wales</div>
                         <div class="speaker-company">Wikipedia </div>
@@ -1163,61 +1165,61 @@
                     </button>
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModalCenter12" tabindex="-1" role="dialog"
-                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 800px;">
-                        <div class="modal-content" style="size:auto !important; border:none;">
-                            <div style="display:flex;">
-                                <div style="display:flex; background-color: #333333;">
-                                    <div style="padding-right: 0%;">
-                                        <img class="modalspeaker__img" src="speaker.png" alt="speaker img"
-                                            style="width: 100%;">
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 800px;">
+                            <div class="modal-content" style="size:auto !important; border:none;">
+                                <div style="display:flex;">
+                                    <div style="display:flex; background-color: #333333;">
+                                        <div style="padding-right: 0%;">
+                                            <img class="modalspeaker__img" src="speaker.png" alt="speaker img"
+                                                style="width: 100%;">
+                                        </div>
+                                        <div
+                                            style="display:flex; flex-direction: column; padding-right: 5%; padding-left: 0%; padding-top:10%;">
+                                            <a href="https://www.facebook.com/ecell.iitg/" target="_blank"
+                                                class="modalicons">
+                                                <img class="facebook button" src="static files\facebook.svg"
+                                                    style="width: 32px; height:32px;">
+                                            </a>
+                                            <a href="https://www.linkedin.com/company/ecell-iitg/" target="_blank"
+                                                class="modalicons">
+                                                <img class="linkedin button" src="static files\linkedin.svg"
+                                                    style="width: 32px; height:32px;">
+                                            </a>
+                                            <a href="https://www.instagram.com/ecell_iitg/" target="_blank"
+                                                class="modalicons">
+                                                <img class="discord button" src="static files\discord.svg"
+                                                    style="width: 32px; height:32px;">
+                                            </a>
+                                        </div>
                                     </div>
                                     <div
-                                        style="display:flex; flex-direction: column; padding-right: 5%; padding-left: 0%; padding-top:10%;">
-                                        <a href="https://www.facebook.com/ecell.iitg/" target="_blank"
-                                            class="modalicons">
-                                            <img class="facebook button" src="static files\facebook.svg"
-                                                style="width: 32px; height:32px;">
-                                        </a>
-                                        <a href="https://www.linkedin.com/company/ecell-iitg/" target="_blank"
-                                            class="modalicons">
-                                            <img class="linkedin button" src="static files\linkedin.svg"
-                                                style="width: 32px; height:32px;">
-                                        </a>
-                                        <a href="https://www.instagram.com/ecell_iitg/" target="_blank"
-                                            class="modalicons">
-                                            <img class="discord button" src="static files\discord.svg"
-                                                style="width: 32px; height:32px;">
-                                        </a>
+                                        style="max-width: 500px; padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                        <div class="modalspeakername">sundar pichai</div>
+                                        <div class="modalspeakerpostion">Google <svg height="10" width="10">
+                                                <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                    fill="black" />
+                                            </svg> CEO </div>
+                                        <p class="modalspeakerdetails" style="color: black;">Lorem Ipsum is simply
+                                            dummy
+                                            text of the printing and typesetting industry. Lorem Ipsum has been the
+                                            industry's standard dummy text ever since the 1500s, when an unknown
+                                            printer
+                                            took a galley of type and scrambled it to make a type specimen book. It
+                                            has
+                                            survived not only five centuries, but also the leap into electronic
+                                            typesetting, remaining essentially unchanged. It was popularised in the
+                                            1960s with the release of Letraset sheets containing Lorem Ipsum
+                                            passages,
+                                            and more recently with desktop publishing software like Aldus PageMaker
+                                            including versions of Lorem Ipsum.Contrary to popular belief, Lorem
+                                            Ipsum is
+                                            not simply random text.</p>
                                     </div>
-                                </div>
-                                <div
-                                    style="max-width: 500px; padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
-                                    <div class="modalspeakername">sundar pichai</div>
-                                    <div class="modalspeakerpostion">Google <svg height="10" width="10">
-                                            <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
-                                                fill="black" />
-                                        </svg> CEO </div>
-                                    <p class="modalspeakerdetails" style="color: black;">Lorem Ipsum is simply
-                                        dummy
-                                        text of the printing and typesetting industry. Lorem Ipsum has been the
-                                        industry's standard dummy text ever since the 1500s, when an unknown
-                                        printer
-                                        took a galley of type and scrambled it to make a type specimen book. It
-                                        has
-                                        survived not only five centuries, but also the leap into electronic
-                                        typesetting, remaining essentially unchanged. It was popularised in the
-                                        1960s with the release of Letraset sheets containing Lorem Ipsum
-                                        passages,
-                                        and more recently with desktop publishing software like Aldus PageMaker
-                                        including versions of Lorem Ipsum.Contrary to popular belief, Lorem
-                                        Ipsum is
-                                        not simply random text.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
                     <div class="speaker-content">
                         <div class="speaker-name">jimmy wales</div>
                         <div class="speaker-company">Wikipedia </div>
@@ -1234,61 +1236,61 @@
                     </button>
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModalCenter13" tabindex="-1" role="dialog"
-                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 800px;">
-                        <div class="modal-content" style="size:auto !important; border:none;">
-                            <div style="display:flex;">
-                                <div style="display:flex; background-color: #333333;">
-                                    <div style="padding-right: 0%;">
-                                        <img class="modalspeaker__img" src="speaker.png" alt="speaker img"
-                                            style="width: 100%;">
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 800px;">
+                            <div class="modal-content" style="size:auto !important; border:none;">
+                                <div style="display:flex;">
+                                    <div style="display:flex; background-color: #333333;">
+                                        <div style="padding-right: 0%;">
+                                            <img class="modalspeaker__img" src="speaker.png" alt="speaker img"
+                                                style="width: 100%;">
+                                        </div>
+                                        <div
+                                            style="display:flex; flex-direction: column; padding-right: 5%; padding-left: 0%; padding-top:10%;">
+                                            <a href="https://www.facebook.com/ecell.iitg/" target="_blank"
+                                                class="modalicons">
+                                                <img class="facebook button" src="static files\facebook.svg"
+                                                    style="width: 32px; height:32px;">
+                                            </a>
+                                            <a href="https://www.linkedin.com/company/ecell-iitg/" target="_blank"
+                                                class="modalicons">
+                                                <img class="linkedin button" src="static files\linkedin.svg"
+                                                    style="width: 32px; height:32px;">
+                                            </a>
+                                            <a href="https://www.instagram.com/ecell_iitg/" target="_blank"
+                                                class="modalicons">
+                                                <img class="discord button" src="static files\discord.svg"
+                                                    style="width: 32px; height:32px;">
+                                            </a>
+                                        </div>
                                     </div>
                                     <div
-                                        style="display:flex; flex-direction: column; padding-right: 5%; padding-left: 0%; padding-top:10%;">
-                                        <a href="https://www.facebook.com/ecell.iitg/" target="_blank"
-                                            class="modalicons">
-                                            <img class="facebook button" src="static files\facebook.svg"
-                                                style="width: 32px; height:32px;">
-                                        </a>
-                                        <a href="https://www.linkedin.com/company/ecell-iitg/" target="_blank"
-                                            class="modalicons">
-                                            <img class="linkedin button" src="static files\linkedin.svg"
-                                                style="width: 32px; height:32px;">
-                                        </a>
-                                        <a href="https://www.instagram.com/ecell_iitg/" target="_blank"
-                                            class="modalicons">
-                                            <img class="discord button" src="static files\discord.svg"
-                                                style="width: 32px; height:32px;">
-                                        </a>
+                                        style="max-width: 500px; padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                        <div class="modalspeakername">sundar pichai</div>
+                                        <div class="modalspeakerpostion">Google <svg height="10" width="10">
+                                                <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                    fill="black" />
+                                            </svg> CEO </div>
+                                        <p class="modalspeakerdetails" style="color: black;">Lorem Ipsum is simply
+                                            dummy
+                                            text of the printing and typesetting industry. Lorem Ipsum has been the
+                                            industry's standard dummy text ever since the 1500s, when an unknown
+                                            printer
+                                            took a galley of type and scrambled it to make a type specimen book. It
+                                            has
+                                            survived not only five centuries, but also the leap into electronic
+                                            typesetting, remaining essentially unchanged. It was popularised in the
+                                            1960s with the release of Letraset sheets containing Lorem Ipsum
+                                            passages,
+                                            and more recently with desktop publishing software like Aldus PageMaker
+                                            including versions of Lorem Ipsum.Contrary to popular belief, Lorem
+                                            Ipsum is
+                                            not simply random text.</p>
                                     </div>
-                                </div>
-                                <div
-                                    style="max-width: 500px; padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
-                                    <div class="modalspeakername">sundar pichai</div>
-                                    <div class="modalspeakerpostion">Google <svg height="10" width="10">
-                                            <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
-                                                fill="black" />
-                                        </svg> CEO </div>
-                                    <p class="modalspeakerdetails" style="color: black;">Lorem Ipsum is simply
-                                        dummy
-                                        text of the printing and typesetting industry. Lorem Ipsum has been the
-                                        industry's standard dummy text ever since the 1500s, when an unknown
-                                        printer
-                                        took a galley of type and scrambled it to make a type specimen book. It
-                                        has
-                                        survived not only five centuries, but also the leap into electronic
-                                        typesetting, remaining essentially unchanged. It was popularised in the
-                                        1960s with the release of Letraset sheets containing Lorem Ipsum
-                                        passages,
-                                        and more recently with desktop publishing software like Aldus PageMaker
-                                        including versions of Lorem Ipsum.Contrary to popular belief, Lorem
-                                        Ipsum is
-                                        not simply random text.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
                     <div class="speaker-content">
                         <div class="speaker-name">jimmy wales</div>
                         <div class="speaker-company">Wikipedia </div>
@@ -1305,61 +1307,61 @@
                     </button>
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModalCenter14" tabindex="-1" role="dialog"
-                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 800px;">
-                        <div class="modal-content" style="size:auto !important; border:none;">
-                            <div style="display:flex;">
-                                <div style="display:flex; background-color: #333333;">
-                                    <div style="padding-right: 0%;">
-                                        <img class="modalspeaker__img" src="speaker.png" alt="speaker img"
-                                            style="width: 100%;">
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 800px;">
+                            <div class="modal-content" style="size:auto !important; border:none;">
+                                <div style="display:flex;">
+                                    <div style="display:flex; background-color: #333333;">
+                                        <div style="padding-right: 0%;">
+                                            <img class="modalspeaker__img" src="speaker.png" alt="speaker img"
+                                                style="width: 100%;">
+                                        </div>
+                                        <div
+                                            style="display:flex; flex-direction: column; padding-right: 5%; padding-left: 0%; padding-top:10%;">
+                                            <a href="https://www.facebook.com/ecell.iitg/" target="_blank"
+                                                class="modalicons">
+                                                <img class="facebook button" src="static files\facebook.svg"
+                                                    style="width: 32px; height:32px;">
+                                            </a>
+                                            <a href="https://www.linkedin.com/company/ecell-iitg/" target="_blank"
+                                                class="modalicons">
+                                                <img class="linkedin button" src="static files\linkedin.svg"
+                                                    style="width: 32px; height:32px;">
+                                            </a>
+                                            <a href="https://www.instagram.com/ecell_iitg/" target="_blank"
+                                                class="modalicons">
+                                                <img class="discord button" src="static files\discord.svg"
+                                                    style="width: 32px; height:32px;">
+                                            </a>
+                                        </div>
                                     </div>
                                     <div
-                                        style="display:flex; flex-direction: column; padding-right: 5%; padding-left: 0%; padding-top:10%;">
-                                        <a href="https://www.facebook.com/ecell.iitg/" target="_blank"
-                                            class="modalicons">
-                                            <img class="facebook button" src="static files\facebook.svg"
-                                                style="width: 32px; height:32px;">
-                                        </a>
-                                        <a href="https://www.linkedin.com/company/ecell-iitg/" target="_blank"
-                                            class="modalicons">
-                                            <img class="linkedin button" src="static files\linkedin.svg"
-                                                style="width: 32px; height:32px;">
-                                        </a>
-                                        <a href="https://www.instagram.com/ecell_iitg/" target="_blank"
-                                            class="modalicons">
-                                            <img class="discord button" src="static files\discord.svg"
-                                                style="width: 32px; height:32px;">
-                                        </a>
+                                        style="max-width: 500px; padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                        <div class="modalspeakername">sundar pichai</div>
+                                        <div class="modalspeakerpostion">Google <svg height="10" width="10">
+                                                <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                    fill="black" />
+                                            </svg> CEO </div>
+                                        <p class="modalspeakerdetails" style="color: black;">Lorem Ipsum is simply
+                                            dummy
+                                            text of the printing and typesetting industry. Lorem Ipsum has been the
+                                            industry's standard dummy text ever since the 1500s, when an unknown
+                                            printer
+                                            took a galley of type and scrambled it to make a type specimen book. It
+                                            has
+                                            survived not only five centuries, but also the leap into electronic
+                                            typesetting, remaining essentially unchanged. It was popularised in the
+                                            1960s with the release of Letraset sheets containing Lorem Ipsum
+                                            passages,
+                                            and more recently with desktop publishing software like Aldus PageMaker
+                                            including versions of Lorem Ipsum.Contrary to popular belief, Lorem
+                                            Ipsum is
+                                            not simply random text.</p>
                                     </div>
-                                </div>
-                                <div
-                                    style="max-width: 500px; padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
-                                    <div class="modalspeakername">sundar pichai</div>
-                                    <div class="modalspeakerpostion">Google <svg height="10" width="10">
-                                            <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
-                                                fill="black" />
-                                        </svg> CEO </div>
-                                    <p class="modalspeakerdetails" style="color: black;">Lorem Ipsum is simply
-                                        dummy
-                                        text of the printing and typesetting industry. Lorem Ipsum has been the
-                                        industry's standard dummy text ever since the 1500s, when an unknown
-                                        printer
-                                        took a galley of type and scrambled it to make a type specimen book. It
-                                        has
-                                        survived not only five centuries, but also the leap into electronic
-                                        typesetting, remaining essentially unchanged. It was popularised in the
-                                        1960s with the release of Letraset sheets containing Lorem Ipsum
-                                        passages,
-                                        and more recently with desktop publishing software like Aldus PageMaker
-                                        including versions of Lorem Ipsum.Contrary to popular belief, Lorem
-                                        Ipsum is
-                                        not simply random text.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
                     <div class="speaker-content">
                         <div class="speaker-name">jimmy wales</div>
                         <div class="speaker-company">Wikipedia </div>
@@ -1376,61 +1378,61 @@
                     </button>
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModalCenter15" tabindex="-1" role="dialog"
-                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 800px;">
-                        <div class="modal-content" style="size:auto !important; border:none;">
-                            <div style="display:flex;">
-                                <div style="display:flex; background-color: #333333;">
-                                    <div style="padding-right: 0%;">
-                                        <img class="modalspeaker__img" src="speaker.png" alt="speaker img"
-                                            style="width: 100%;">
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 800px;">
+                            <div class="modal-content" style="size:auto !important; border:none;">
+                                <div style="display:flex;">
+                                    <div style="display:flex; background-color: #333333;">
+                                        <div style="padding-right: 0%;">
+                                            <img class="modalspeaker__img" src="speaker.png" alt="speaker img"
+                                                style="width: 100%;">
+                                        </div>
+                                        <div
+                                            style="display:flex; flex-direction: column; padding-right: 5%; padding-left: 0%; padding-top:10%;">
+                                            <a href="https://www.facebook.com/ecell.iitg/" target="_blank"
+                                                class="modalicons">
+                                                <img class="facebook button" src="static files\facebook.svg"
+                                                    style="width: 32px; height:32px;">
+                                            </a>
+                                            <a href="https://www.linkedin.com/company/ecell-iitg/" target="_blank"
+                                                class="modalicons">
+                                                <img class="linkedin button" src="static files\linkedin.svg"
+                                                    style="width: 32px; height:32px;">
+                                            </a>
+                                            <a href="https://www.instagram.com/ecell_iitg/" target="_blank"
+                                                class="modalicons">
+                                                <img class="discord button" src="static files\discord.svg"
+                                                    style="width: 32px; height:32px;">
+                                            </a>
+                                        </div>
                                     </div>
                                     <div
-                                        style="display:flex; flex-direction: column; padding-right: 5%; padding-left: 0%; padding-top:10%;">
-                                        <a href="https://www.facebook.com/ecell.iitg/" target="_blank"
-                                            class="modalicons">
-                                            <img class="facebook button" src="static files\facebook.svg"
-                                                style="width: 32px; height:32px;">
-                                        </a>
-                                        <a href="https://www.linkedin.com/company/ecell-iitg/" target="_blank"
-                                            class="modalicons">
-                                            <img class="linkedin button" src="static files\linkedin.svg"
-                                                style="width: 32px; height:32px;">
-                                        </a>
-                                        <a href="https://www.instagram.com/ecell_iitg/" target="_blank"
-                                            class="modalicons">
-                                            <img class="discord button" src="static files\discord.svg"
-                                                style="width: 32px; height:32px;">
-                                        </a>
+                                        style="max-width: 500px; padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                        <div class="modalspeakername">sundar pichai</div>
+                                        <div class="modalspeakerpostion">Google <svg height="10" width="10">
+                                                <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                    fill="black" />
+                                            </svg> CEO </div>
+                                        <p class="modalspeakerdetails" style="color: black;">Lorem Ipsum is simply
+                                            dummy
+                                            text of the printing and typesetting industry. Lorem Ipsum has been the
+                                            industry's standard dummy text ever since the 1500s, when an unknown
+                                            printer
+                                            took a galley of type and scrambled it to make a type specimen book. It
+                                            has
+                                            survived not only five centuries, but also the leap into electronic
+                                            typesetting, remaining essentially unchanged. It was popularised in the
+                                            1960s with the release of Letraset sheets containing Lorem Ipsum
+                                            passages,
+                                            and more recently with desktop publishing software like Aldus PageMaker
+                                            including versions of Lorem Ipsum.Contrary to popular belief, Lorem
+                                            Ipsum is
+                                            not simply random text.</p>
                                     </div>
-                                </div>
-                                <div
-                                    style="max-width: 500px; padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
-                                    <div class="modalspeakername">sundar pichai</div>
-                                    <div class="modalspeakerpostion">Google <svg height="10" width="10">
-                                            <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
-                                                fill="black" />
-                                        </svg> CEO </div>
-                                    <p class="modalspeakerdetails" style="color: black;">Lorem Ipsum is simply
-                                        dummy
-                                        text of the printing and typesetting industry. Lorem Ipsum has been the
-                                        industry's standard dummy text ever since the 1500s, when an unknown
-                                        printer
-                                        took a galley of type and scrambled it to make a type specimen book. It
-                                        has
-                                        survived not only five centuries, but also the leap into electronic
-                                        typesetting, remaining essentially unchanged. It was popularised in the
-                                        1960s with the release of Letraset sheets containing Lorem Ipsum
-                                        passages,
-                                        and more recently with desktop publishing software like Aldus PageMaker
-                                        including versions of Lorem Ipsum.Contrary to popular belief, Lorem
-                                        Ipsum is
-                                        not simply random text.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
                     <div class="speaker-content">
                         <div class="speaker-name">jimmy wales</div>
                         <div class="speaker-company">Wikipedia </div>
@@ -1447,61 +1449,61 @@
                     </button>
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModalCenter16" tabindex="-1" role="dialog"
-                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 800px;">
-                        <div class="modal-content" style="size:auto !important; border:none;">
-                            <div style="display:flex;">
-                                <div style="display:flex; background-color: #333333;">
-                                    <div style="padding-right: 0%;">
-                                        <img class="modalspeaker__img" src="speaker.png" alt="speaker img"
-                                            style="width: 100%;">
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 800px;">
+                            <div class="modal-content" style="size:auto !important; border:none;">
+                                <div style="display:flex;">
+                                    <div style="display:flex; background-color: #333333;">
+                                        <div style="padding-right: 0%;">
+                                            <img class="modalspeaker__img" src="speaker.png" alt="speaker img"
+                                                style="width: 100%;">
+                                        </div>
+                                        <div
+                                            style="display:flex; flex-direction: column; padding-right: 5%; padding-left: 0%; padding-top:10%;">
+                                            <a href="https://www.facebook.com/ecell.iitg/" target="_blank"
+                                                class="modalicons">
+                                                <img class="facebook button" src="static files\facebook.svg"
+                                                    style="width: 32px; height:32px;">
+                                            </a>
+                                            <a href="https://www.linkedin.com/company/ecell-iitg/" target="_blank"
+                                                class="modalicons">
+                                                <img class="linkedin button" src="static files\linkedin.svg"
+                                                    style="width: 32px; height:32px;">
+                                            </a>
+                                            <a href="https://www.instagram.com/ecell_iitg/" target="_blank"
+                                                class="modalicons">
+                                                <img class="discord button" src="static files\discord.svg"
+                                                    style="width: 32px; height:32px;">
+                                            </a>
+                                        </div>
                                     </div>
                                     <div
-                                        style="display:flex; flex-direction: column; padding-right: 5%; padding-left: 0%; padding-top:10%;">
-                                        <a href="https://www.facebook.com/ecell.iitg/" target="_blank"
-                                            class="modalicons">
-                                            <img class="facebook button" src="static files\facebook.svg"
-                                                style="width: 32px; height:32px;">
-                                        </a>
-                                        <a href="https://www.linkedin.com/company/ecell-iitg/" target="_blank"
-                                            class="modalicons">
-                                            <img class="linkedin button" src="static files\linkedin.svg"
-                                                style="width: 32px; height:32px;">
-                                        </a>
-                                        <a href="https://www.instagram.com/ecell_iitg/" target="_blank"
-                                            class="modalicons">
-                                            <img class="discord button" src="static files\discord.svg"
-                                                style="width: 32px; height:32px;">
-                                        </a>
+                                        style="max-width: 500px; padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                        <div class="modalspeakername">sundar pichai</div>
+                                        <div class="modalspeakerpostion">Google <svg height="10" width="10">
+                                                <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                    fill="black" />
+                                            </svg> CEO </div>
+                                        <p class="modalspeakerdetails" style="color: black;">Lorem Ipsum is simply
+                                            dummy
+                                            text of the printing and typesetting industry. Lorem Ipsum has been the
+                                            industry's standard dummy text ever since the 1500s, when an unknown
+                                            printer
+                                            took a galley of type and scrambled it to make a type specimen book. It
+                                            has
+                                            survived not only five centuries, but also the leap into electronic
+                                            typesetting, remaining essentially unchanged. It was popularised in the
+                                            1960s with the release of Letraset sheets containing Lorem Ipsum
+                                            passages,
+                                            and more recently with desktop publishing software like Aldus PageMaker
+                                            including versions of Lorem Ipsum.Contrary to popular belief, Lorem
+                                            Ipsum is
+                                            not simply random text.</p>
                                     </div>
-                                </div>
-                                <div
-                                    style="max-width: 500px; padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
-                                    <div class="modalspeakername">sundar pichai</div>
-                                    <div class="modalspeakerpostion">Google <svg height="10" width="10">
-                                            <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
-                                                fill="black" />
-                                        </svg> CEO </div>
-                                    <p class="modalspeakerdetails" style="color: black;">Lorem Ipsum is simply
-                                        dummy
-                                        text of the printing and typesetting industry. Lorem Ipsum has been the
-                                        industry's standard dummy text ever since the 1500s, when an unknown
-                                        printer
-                                        took a galley of type and scrambled it to make a type specimen book. It
-                                        has
-                                        survived not only five centuries, but also the leap into electronic
-                                        typesetting, remaining essentially unchanged. It was popularised in the
-                                        1960s with the release of Letraset sheets containing Lorem Ipsum
-                                        passages,
-                                        and more recently with desktop publishing software like Aldus PageMaker
-                                        including versions of Lorem Ipsum.Contrary to popular belief, Lorem
-                                        Ipsum is
-                                        not simply random text.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
                     <div class="speaker-content">
                         <div class="speaker-name">jimmy wales</div>
                         <div class="speaker-company">Wikipedia </div>
@@ -1579,6 +1581,7 @@
             <div class="container">
                 <div class="row sponsor">
                     <div class="col-6 align-self-center sponsor-left">
+<<<<<<< Updated upstream
                             <h1 style="margin-bottom: 50px;">SPONSORS</h1>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ratione perspiciatis tempora eos corrupti illo molestias necessitatibus aspernatur odio minus?
@@ -1588,6 +1591,21 @@
                             <br>
                             <a href="#" style="color: white;"> BECOME A SPONSOR </a>
                         </div>
+=======
+                        <h1 style="margin-bottom: 50px;">SPONSORS</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ratione perspiciatis
+                            tempora
+                            eos corrupti illo molestias necessitatibus aspernatur odio minus?
+                        </p>
+                        <br>
+                        <a href="#" style="font-size: 20px;color: #00b0e0;"> VIEW ALL SPONSORS <i
+                                class="fas fa-chevron-right sponsor-icon"></i> </a>
+                        <br>
+                        <br>
+                        <a href="#" style="color: white;"> BECOME A SPONSOR </a>
+                    </div>
+>>>>>>> Stashed changes
                     <div class="col-6 sponsor-right" style="padding-left: 0px;">
                         <img src="https://codingninjas.com/assets-landing/images/CNLOGO.svg" alt=""  width="200em" class="codingninjas">
                     </div>
