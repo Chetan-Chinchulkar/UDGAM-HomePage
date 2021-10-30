@@ -77,7 +77,22 @@ body {
     font-size: 3vh;
     
 }
+/* ################################### more events styling ######################################### */
+.more-events-heading{
+    display: flex; 
+    justify-content: space-between;
+}
+.more-events-heading h1{
 
+}
+.more-events-heading button{
+    padding-top: 10px;
+    background-color: transparent;
+    border: none;
+}
+.more-events{
+    display: none;
+}
 
 /* ############################## speaker section styling ################################# */
 .speaker-info{
@@ -173,7 +188,29 @@ body {
     width: 100%;
 }
 
-
+/* ######################################### show more speakers styling ########################################################### */
+#less-speakers{
+    position: relative;
+}
+#show-more-speakers{
+    position: absolute;
+    text-align: center;
+    bottom: 2em;
+    /* padding: 137px 0; */
+    padding-top: 137px;
+    border: none;
+    padding-bottom: 0px;
+    /* width: 100%; */
+    /* background-color: rgba(138, 138, 138, 0.829); */
+    /* background: linear-gradient(to top, rgba(102, 99, 99, 0.452) 80%,rgb(182, 33, 33) 20%); */
+    position: absolute; bottom:0px; left:0px; width:100%; height:370px;
+    background:transparent;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.9) 20%,rgba(80, 78, 78, 0.589) 70%,rgba(0,0,0,0) 100%);
+    /* background: linear-gradient(to top, rgba(255,255,255,1) 20%,rgba(0,0,0,0) 100%); */
+}
+#more-speakers{
+    display: none;
+}
 
 /* ########################################### Sponsors css ####################################### */
 .sponsor{
