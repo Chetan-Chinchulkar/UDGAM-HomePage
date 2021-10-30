@@ -78,6 +78,14 @@ body {
     
 }
 /* ################################### more events styling ######################################### */
+#show-more-events a{
+    text-decoration: none;
+    color: #00b0e0;
+}
+#show-more-events a:hover{
+    text-decoration: none;
+    border: none;
+}
 .more-events-heading{
     display: flex; 
     flex-direction: row-reverse;

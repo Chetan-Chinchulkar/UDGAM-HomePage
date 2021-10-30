@@ -121,14 +121,14 @@
             </div>
 
             <!-- Gap for icon-->
-            <div style="height: 10vh;"></div>
+            <div style="height: 10vh;" id="events-collapse"></div>
             <!-------------------->
 
 
 
 
 
-            <div class="container">
+            <div class="container" >
                 <h2 style="color:#00b0e0;">
                     EVENTS INCLUDED WITH THE UDGAM PASS
                 </h2>
@@ -318,8 +318,11 @@
                 </div>
             </div>
             <div class="more-events-heading container">
-                <button id="show-more-events" style="color:#00b0e0;" onclick="moreEvents()">show more <i
-                        class="fas fa-chevron-up" style="color:#00b0e0;"></i> </button>
+                <button id="show-more-events" style="color:#00b0e0;" onclick="moreEvents()">
+                    show more <i
+                        class="fas fa-chevron-down" style="color:#00b0e0;"></i>
+                </button>
+                
             </div>
             <br><br>
         </section>
@@ -1832,13 +1835,15 @@
 
             Array.from(show).forEach(element => {
                 console.log(element);
-                if (str.includes('up')) {
+                if (str.includes('down')) {
                     // console.log('yes');
                     element.style.display = 'flex';
-                    toggle.innerHTML = `show less <i class="fas fa-chevron-down" style="color:#00b0e0;"></i> `;
+                    toggle.innerHTML = `<a href="#events-collapse">show less <i class="fas fa-chevron-up" style="color:#00b0e0;"></i></a>`;
                 } else {
+                    let target = document.getElementById('events-collapse');
+                    console.log(target);
                     element.style.display = 'none';
-                    toggle.innerHTML = `show more <i class="fas fa-chevron-up" style="color:#00b0e0;"></i> `;
+                    toggle.innerHTML = `show more <i class="fas fa-chevron-down" style="color:#00b0e0;"></i>`;
                 }
             });
 
