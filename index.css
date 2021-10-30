@@ -175,9 +175,36 @@ body {
 
 
 
-
-
-
+/* ########################################### Sponsors css ####################################### */
+.sponsor{
+    height: 70vh;
+    margin-top: 4vh;
+}
+.sponsor-right{
+    /* border: 2px solid red; */
+    position: relative;
+}
+.sponsor-left{
+    /* border: 2px solid blue; */
+}
+.sponsor a{
+    text-decoration: none;
+}
+.sponsor a:hover{
+    border-bottom: 2px red solid;
+}
+.sponsor-icon{
+    border: 2px solid blue;
+    color: blue;
+    font-size: 16px;
+    padding: 2px 5px;
+}
+.codingninjas{
+    position: absolute;
+    transform: rotate(-90deg);
+    left: -2em;
+    top: 3em;
+}
 
 
 /* 
@@ -218,6 +245,14 @@ body {
 .speaker__overlay:hover > * {
     transform: translateY(0);
 } */
+
+
+
+
+
+
+
+
 
 .modal-content{
     color:black;
