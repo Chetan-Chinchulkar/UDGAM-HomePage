@@ -139,11 +139,7 @@ body {
     background-color: rgba(0, 0, 0, 0.658);
     width: 100%;
     padding: 12px 10px;
-<<<<<<< Updated upstream
     transition: all 0.25s ease;
-=======
-    transition: all 0.6s ease;
->>>>>>> Stashed changes
 }
 .speaker:hover .speaker-content{
     transform: translateY(50%);
@@ -293,6 +289,37 @@ footer{
 
 }
 
+#countdown-timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size : 400%;
+    font-style: Texta;
+    padding-bottom: 8%;
+}
+
+sup {
+    /* line-height: 1000%; */
+    vertical-align: super;
+        /* Specified in % so that the sup/sup is the
+        right size relative to the surrounding text */
+    font-size: 40%;
+
+    /* Zero out the line-height so that it doesn't
+        interfere with the positioning that follows */
+    line-height: 0;
+
+    /* Where the magic happens: makes all browsers position
+        the sup/sup properly, relative to the surrounding text */
+    position: relative;
+
+    /* Note that if you're using Eric Meyer's reset.css, this
+        is already set and you can remove this rule */
+    vertical-align: baseline;
+    /* vertical-align: top; */
+    top: -1.0em;
+    padding-right: 1%;
+}
 
 #footer_icons{
    

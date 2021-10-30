@@ -21,43 +21,43 @@
 
     <div class="main">
 
-    <!-- Test Navbar -->
-    <nav class="navbar sticky-top bg-dark" style="padding: 0;" >
-        <div class="container nav-wrap">
-            <div class="leftnav">
-                <a href=""> HOME </a>
-                <a href=""> EVENTS </a>
-                <a href=""> SPEAKERS </a>
-                <a href=""> FAQ </a>
+        <!-- Test Navbar -->
+        <nav class="navbar sticky-top bg-dark" style="padding: 0;" >
+            <div class="container nav-wrap">
+                <div class="leftnav">
+                    <a href=""> HOME </a>
+                    <a href=""> EVENTS </a>
+                    <a href=""> SPEAKERS </a>
+                    <a href=""> FAQ </a>
+                </div>
+                <div class="midnav">
+                    <!-- <a href="#"> logo </a> -->
+                </div>
+                <div class="rightnav">
+                    <a href=""> TEAM </a>
+                    <a href=""> Events </a>
+                    <a href=""> Speakers </a>
+                    <a href=""> FAQ </a>
+                </div>
+                
             </div>
-            <div class="midnav">
-                <!-- <a href="#"> logo </a> -->
-            </div>
-            <div class="rightnav">
-                <a href=""> TEAM </a>
-                <a href=""> Events </a>
-                <a href=""> Speakers </a>
-                <a href=""> FAQ </a>
-            </div>
-            
-        </div>
 
-    </nav>
-    <!-- <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Brand </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
-          <i class="navbar-toggler-icon"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="main_nav">
-          <ul class="navbar-nav mx-auto">
-          <li class="nav-item active"> <a class="nav-link" href="#">Home </a> </li>
-          <li class="nav-item"><a class="nav-link" href="#"> About </a></li>
-          <li class="nav-item"><a class="nav-link" href="#"> Services </a></li>
-          </ul>
-          <a class="btn btn-warning" href="#">Button</a>
-        </div> 
-    </nav> -->
-    
+        </nav>
+        <!-- <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Brand </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
+            <i class="navbar-toggler-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="main_nav">
+            <ul class="navbar-nav mx-auto">
+            <li class="nav-item active"> <a class="nav-link" href="#">Home </a> </li>
+            <li class="nav-item"><a class="nav-link" href="#"> About </a></li>
+            <li class="nav-item"><a class="nav-link" href="#"> Services </a></li>
+            </ul>
+            <a class="btn btn-warning" href="#">Button</a>
+            </div> 
+        </nav> -->
+        
     
       <!-- ---------------------------------------------------------- -->
       
@@ -594,8 +594,14 @@
                 <br><br><br>
             </div>
         </div>
-    <!-- <hr> -->
+        
+        <div>
+            <span class="container-fluid" style="font-size:110%; display: flex; justify-content: center; align-items: center; padding-bottom: 0.5%;">COUNTDOWN TO UDGAM 2022</span>
+            <div id="countdown-timer">
+            </div>
+        </div>
     </div>
+
 
     
     <footer>
@@ -672,6 +678,36 @@
         }
     </script>
     
-    
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jan 14, 2022 00:00:00").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+            
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+            
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+          // Output the result in an element with id="demo"
+          document.getElementById("countdown-timer").innerHTML = days + "<sup>D</sup>     " + "   " + hours + "<sup>H</sup>   "
+          + minutes + "<sup>M</sup>     " + seconds + "<sup>S</sup>     ";
+            
+          // If the count down is over, write some text 
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown-timer").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+        </script>
+
 </body>
 </html>
