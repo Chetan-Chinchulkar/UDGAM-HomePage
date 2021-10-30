@@ -219,14 +219,7 @@ body {
     /* border: 2px solid red; */
     position: relative;
 }
-<<<<<<< Updated upstream
-.sponsor a{
-=======
-.sponsor-left{
-    /* border: 2px solid blue; */
-}
 .sponsor a,.more-events-heading a{
->>>>>>> Stashed changes
     text-decoration: none;
 }
 .sponsor a:hover,.more-events-heading a:hover{
