@@ -78,10 +78,24 @@ body {
     color: white;
 }
 
+.section-title{
+
+font-style: normal;
+font-weight: 600;
+font-size: 72px;
+line-height: 101px;
+/* identical to box height */
+
+letter-spacing: 0.04em;
+
+}
+
 #title {
     font-size: 20vh;
     font-weight: 800;
 }
+
+
 
 #register {
     font-size: 3vh;
@@ -126,6 +140,25 @@ body {
 .speaker-info .speaker {
     position: relative;
     margin-bottom: 30px;
+}
+
+
+.sponsor-icon-modal{
+    position: absolute;
+    background-color: #ff2f67;
+    color: #ffffff;
+    top: 0.75em;
+    right: 0.5em;
+    height: 1.75em;
+    width: 1.70em;
+    border: 2px solid #ff5353;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 1px 4px;
+    transition: all 0.25s ease;
+    color: #fc0144;
+    font-size: 20px;
+    text-align: center;
 }
 
 .speaker-icon, .speaker-content, .speaker-side-name {
