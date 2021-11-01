@@ -375,11 +375,11 @@ body.modal-open> .main,.modal-backdrop.fade.show {
 */
 
 .blur {
-	backdrop-filter: blur(5px);
-	opacity: 1!important;
+	backdrop-filter: blur(2px);
+	opacity: 1 !important;
 	background: rgba(255,255,255,0.1);
 }
-
+.modal-open
 
 
 .modal-content {
