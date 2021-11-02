@@ -1,0 +1,384 @@
+@font-face {
+    font-family: 'Texta';
+    src: url('Texta-Regular.eot');
+    src: local('Texta'), local('Texta-Regular'),
+        url('Texta-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Texta-Regular.woff2') format('woff2'),
+        url('Texta-Regular.woff') format('woff'),
+        url('Texta-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta Book';
+    src: url('Texta-Book.eot');
+    src: local('Texta Book'), local('Texta-Book'),
+        url('Texta-Book.eot?#iefix') format('embedded-opentype'),
+        url('Texta-Book.woff2') format('woff2'),
+        url('Texta-Book.woff') format('woff'),
+        url('Texta-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta Alt';
+    src: url('TextaAlt-HeavyIt.eot');
+    src: local('Texta Alt Heavy It'), local('TextaAlt-HeavyIt'),
+        url('TextaAlt-HeavyIt.eot?#iefix') format('embedded-opentype'),
+        url('TextaAlt-HeavyIt.woff2') format('woff2'),
+        url('TextaAlt-HeavyIt.woff') format('woff'),
+        url('TextaAlt-HeavyIt.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta Alt';
+    src: url('TextaAlt-Medium.eot');
+    src: local('Texta Alt Medium'), local('TextaAlt-Medium'),
+        url('TextaAlt-Medium.eot?#iefix') format('embedded-opentype'),
+        url('TextaAlt-Medium.woff2') format('woff2'),
+        url('TextaAlt-Medium.woff') format('woff'),
+        url('TextaAlt-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta';
+    src: url('Texta-BoldIt.eot');
+    src: local('Texta Bold It'), local('Texta-BoldIt'),
+        url('Texta-BoldIt.eot?#iefix') format('embedded-opentype'),
+        url('Texta-BoldIt.woff2') format('woff2'),
+        url('Texta-BoldIt.woff') format('woff'),
+        url('Texta-BoldIt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta';
+    src: url('Texta-MediumIt.eot');
+    src: local('Texta Medium It'), local('Texta-MediumIt'),
+        url('Texta-MediumIt.eot?#iefix') format('embedded-opentype'),
+        url('Texta-MediumIt.woff2') format('woff2'),
+        url('Texta-MediumIt.woff') format('woff'),
+        url('Texta-MediumIt.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta';
+    src: url('Texta-Light.eot');
+    src: local('Texta Light'), local('Texta-Light'),
+        url('Texta-Light.eot?#iefix') format('embedded-opentype'),
+        url('Texta-Light.woff2') format('woff2'),
+        url('Texta-Light.woff') format('woff'),
+        url('Texta-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta Book';
+    src: url('Texta-BookIt.eot');
+    src: local('Texta Book It'), local('Texta-BookIt'),
+        url('Texta-BookIt.eot?#iefix') format('embedded-opentype'),
+        url('Texta-BookIt.woff2') format('woff2'),
+        url('Texta-BookIt.woff') format('woff'),
+        url('Texta-BookIt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta Alt';
+    src: url('TextaAlt-It.eot');
+    src: local('Texta Alt It'), local('TextaAlt-It'),
+        url('TextaAlt-It.eot?#iefix') format('embedded-opentype'),
+        url('TextaAlt-It.woff2') format('woff2'),
+        url('TextaAlt-It.woff') format('woff'),
+        url('TextaAlt-It.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta Alt';
+    src: url('TextaAlt-Heavy.eot');
+    src: local('Texta Alt Heavy'), local('TextaAlt-Heavy'),
+        url('TextaAlt-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('TextaAlt-Heavy.woff2') format('woff2'),
+        url('TextaAlt-Heavy.woff') format('woff'),
+        url('TextaAlt-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta';
+    src: url('Texta-Heavy.eot');
+    src: local('Texta Heavy'), local('Texta-Heavy'),
+        url('Texta-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('Texta-Heavy.woff2') format('woff2'),
+        url('Texta-Heavy.woff') format('woff'),
+        url('Texta-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta';
+    src: url('Texta-ThintIt.eot');
+    src: local('Texta Thin It'), local('Texta-ThintIt'),
+        url('Texta-ThintIt.eot?#iefix') format('embedded-opentype'),
+        url('Texta-ThintIt.woff2') format('woff2'),
+        url('Texta-ThintIt.woff') format('woff'),
+        url('Texta-ThintIt.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta Alt';
+    src: url('TextaAlt-Bold.eot');
+    src: local('Texta Alt Bold'), local('TextaAlt-Bold'),
+        url('TextaAlt-Bold.eot?#iefix') format('embedded-opentype'),
+        url('TextaAlt-Bold.woff2') format('woff2'),
+        url('TextaAlt-Bold.woff') format('woff'),
+        url('TextaAlt-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta';
+    src: url('Texta-It.eot');
+    src: local('Texta It'), local('Texta-It'),
+        url('Texta-It.eot?#iefix') format('embedded-opentype'),
+        url('Texta-It.woff2') format('woff2'),
+        url('Texta-It.woff') format('woff'),
+        url('Texta-It.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta Alt';
+    src: url('TextaAlt-Thin.eot');
+    src: local('Texta Alt Thin'), local('TextaAlt-Thin'),
+        url('TextaAlt-Thin.eot?#iefix') format('embedded-opentype'),
+        url('TextaAlt-Thin.woff2') format('woff2'),
+        url('TextaAlt-Thin.woff') format('woff'),
+        url('TextaAlt-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta';
+    src: url('Texta-BlackIt.eot');
+    src: local('Texta Black It'), local('Texta-BlackIt'),
+        url('Texta-BlackIt.eot?#iefix') format('embedded-opentype'),
+        url('Texta-BlackIt.woff2') format('woff2'),
+        url('Texta-BlackIt.woff') format('woff'),
+        url('Texta-BlackIt.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta Alt';
+    src: url('TextaAlt-ThintIt.eot');
+    src: local('Texta Alt Thin It'), local('TextaAlt-ThintIt'),
+        url('TextaAlt-ThintIt.eot?#iefix') format('embedded-opentype'),
+        url('TextaAlt-ThintIt.woff2') format('woff2'),
+        url('TextaAlt-ThintIt.woff') format('woff'),
+        url('TextaAlt-ThintIt.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta';
+    src: url('Texta-Bold.eot');
+    src: local('Texta Bold'), local('Texta-Bold'),
+        url('Texta-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Texta-Bold.woff2') format('woff2'),
+        url('Texta-Bold.woff') format('woff'),
+        url('Texta-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta';
+    src: url('Texta-LightIt.eot');
+    src: local('Texta Light It'), local('Texta-LightIt'),
+        url('Texta-LightIt.eot?#iefix') format('embedded-opentype'),
+        url('Texta-LightIt.woff2') format('woff2'),
+        url('Texta-LightIt.woff') format('woff'),
+        url('Texta-LightIt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta';
+    src: url('Texta-HeavyIt.eot');
+    src: local('Texta Heavy It'), local('Texta-HeavyIt'),
+        url('Texta-HeavyIt.eot?#iefix') format('embedded-opentype'),
+        url('Texta-HeavyIt.woff2') format('woff2'),
+        url('Texta-HeavyIt.woff') format('woff'),
+        url('Texta-HeavyIt.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta Alt Book';
+    src: url('TextaAlt-Book.eot');
+    src: local('Texta Alt Book'), local('TextaAlt-Book'),
+        url('TextaAlt-Book.eot?#iefix') format('embedded-opentype'),
+        url('TextaAlt-Book.woff2') format('woff2'),
+        url('TextaAlt-Book.woff') format('woff'),
+        url('TextaAlt-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta Alt Book';
+    src: url('TextaAlt-BookIt.eot');
+    src: local('Texta Alt Book It'), local('TextaAlt-BookIt'),
+        url('TextaAlt-BookIt.eot?#iefix') format('embedded-opentype'),
+        url('TextaAlt-BookIt.woff2') format('woff2'),
+        url('TextaAlt-BookIt.woff') format('woff'),
+        url('TextaAlt-BookIt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta';
+    src: url('Texta-Thin.eot');
+    src: local('Texta Thin'), local('Texta-Thin'),
+        url('Texta-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Texta-Thin.woff2') format('woff2'),
+        url('Texta-Thin.woff') format('woff'),
+        url('Texta-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta Alt';
+    src: url('TextaAlt-LightIt.eot');
+    src: local('Texta Alt Light It'), local('TextaAlt-LightIt'),
+        url('TextaAlt-LightIt.eot?#iefix') format('embedded-opentype'),
+        url('TextaAlt-LightIt.woff2') format('woff2'),
+        url('TextaAlt-LightIt.woff') format('woff'),
+        url('TextaAlt-LightIt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta Alt';
+    src: url('TextaAlt-Black.eot');
+    src: local('Texta Alt Black'), local('TextaAlt-Black'),
+        url('TextaAlt-Black.eot?#iefix') format('embedded-opentype'),
+        url('TextaAlt-Black.woff2') format('woff2'),
+        url('TextaAlt-Black.woff') format('woff'),
+        url('TextaAlt-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta Alt';
+    src: url('TextaAlt-MediumIt.eot');
+    src: local('Texta Alt Medium It'), local('TextaAlt-MediumIt'),
+        url('TextaAlt-MediumIt.eot?#iefix') format('embedded-opentype'),
+        url('TextaAlt-MediumIt.woff2') format('woff2'),
+        url('TextaAlt-MediumIt.woff') format('woff'),
+        url('TextaAlt-MediumIt.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta Alt';
+    src: url('TextaAlt-Regular.eot');
+    src: local('Texta Alt'), local('TextaAlt-Regular'),
+        url('TextaAlt-Regular.eot?#iefix') format('embedded-opentype'),
+        url('TextaAlt-Regular.woff2') format('woff2'),
+        url('TextaAlt-Regular.woff') format('woff'),
+        url('TextaAlt-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta';
+    src: url('Texta-Medium.eot');
+    src: local('Texta Medium'), local('Texta-Medium'),
+        url('Texta-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Texta-Medium.woff2') format('woff2'),
+        url('Texta-Medium.woff') format('woff'),
+        url('Texta-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta Alt';
+    src: url('TextaAlt-Light.eot');
+    src: local('Texta Alt Light'), local('TextaAlt-Light'),
+        url('TextaAlt-Light.eot?#iefix') format('embedded-opentype'),
+        url('TextaAlt-Light.woff2') format('woff2'),
+        url('TextaAlt-Light.woff') format('woff'),
+        url('TextaAlt-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta Alt';
+    src: url('TextaAlt-BlackIt.eot');
+    src: local('Texta Alt Black It'), local('TextaAlt-BlackIt'),
+        url('TextaAlt-BlackIt.eot?#iefix') format('embedded-opentype'),
+        url('TextaAlt-BlackIt.woff2') format('woff2'),
+        url('TextaAlt-BlackIt.woff') format('woff'),
+        url('TextaAlt-BlackIt.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta Alt';
+    src: url('TextaAlt-BoldIt.eot');
+    src: local('Texta Alt Bold It'), local('TextaAlt-BoldIt'),
+        url('TextaAlt-BoldIt.eot?#iefix') format('embedded-opentype'),
+        url('TextaAlt-BoldIt.woff2') format('woff2'),
+        url('TextaAlt-BoldIt.woff') format('woff'),
+        url('TextaAlt-BoldIt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta';
+    src: url('Texta-Black.eot');
+    src: local('Texta Black'), local('Texta-Black'),
+        url('Texta-Black.eot?#iefix') format('embedded-opentype'),
+        url('Texta-Black.woff2') format('woff2'),
+        url('Texta-Black.woff') format('woff'),
+        url('Texta-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
