@@ -6,7 +6,8 @@ body::-webkit-scrollbar {
 
 #bg_image {
   background-image: url("static files/bkgrd 1.png"),
-    url("static files/bkgrd 2.png"), url("static files/bkgrd 3.png");
+    url("static files/bkgrd 2.png"), url("static files/bkgrd 3.png"),
+    url("static files/bkgrd 1.png");
   position: absolute;
   left: 0;
   top: 0;
@@ -19,7 +20,7 @@ body::-webkit-scrollbar {
   position: fixed;
   top: 22%;
   left: 50%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 40%;
   width: 40%;
   transform: translate(-50%, 0);

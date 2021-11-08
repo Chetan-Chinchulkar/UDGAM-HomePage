@@ -2,6 +2,9 @@
 //import * as THREE from 'three';
 //import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
+
+document.getElementById("bg_image").height = (document.querySelector("main").offsetHeight).toString() + "px";
+
 let box = document.querySelector('#sphere');
 let box_width = box.offsetWidth;
 let box_height = box.offsetHeight;
@@ -44,12 +47,6 @@ renderer.render(scene, camera);
 const ambientLight = new THREE.AmbientLight(0xffffff);
 scene.add(/* pointLight, */ ambientLight);
 
-// Helpers
-
-// const lightHelper = new THREE.PointLightHelper(pointLight)
-// const gridHelper = new THREE.GridHelper(200, 50);
-// scene.add(lightHelper, gridHelper)
-
 // const controls = new OrbitControls(camera, renderer.domElement);
 
 function addStar() {
@@ -81,39 +78,47 @@ const moon = new THREE.Mesh(
   new THREE.SphereGeometry(120, 32, 32),
   new THREE.MeshStandardMaterial({
     map: moonTexture,
-  //  normalMap: normalTexture,
   })
 );
-
-//moon.position.z -= 25;
-
-//scaleMoon(16);
 scene.add(moon);
 
-//moon.position.z = 30;
-//moon.position.setX(-10);
+//scaleMoon(16);
 
-// Scroll Animation
-function scaleMoon(scale) {
+/* function scaleMoon(scale) {
   //const a = -0.2797;
   //var scale2 = a*scale - a + 1 ;
   var scale2 = 1;
   moon.scale.x = scale;
   moon.scale.y = scale/scale2;
   moon.scale.z = scale/scale2;
-}
+} */
 
 var bottom_sphere_box = document.querySelector('.bottom_sphere_cont');
-var max_y = 100;
-var new_box_height = 66.4;
+var max_y = 100* (
+    document.querySelector('#events').getBoundingClientRect().top -
+    document.querySelector("body").getBoundingClientRect().top
+    )/window.innerHeight;
+//var max_y = 100;
+//var new_box_height = 66.4;
+var new_box_height = document.querySelector('.navbar').getBoundingClientRect().height;
 var sphere_zindex = 1;
 var sphere_positioned_at_bottom = false;
 var sphere_positioned_at_top = false;
 function scrollAnimation() {
   //var t = document.body.getBoundingClientRect().top;
-  var y = (window.scrollY/window.innerWidth)*100;
-  //console.log(y);
-  if(y>60){document.getElementById("sphere").style.zIndex = "3"; sphere_zindex=3;}
+  var y = (window.scrollY/window.innerHeight)*100;
+  //console.log('y',y);
+  if(y>60){
+      if(sphere_positioned_at_top == false){
+      document.getElementById("sphere").style.zIndex = "3"; sphere_zindex=3;
+    }
+  }
+  if(y<60){
+    if(sphere_positioned_at_top == true){
+        document.getElementById("sphere").style.zIndex = "1"; sphere_zindex=1;
+        sphere_positioned_at_top = false;
+    }
+  }
   if(y>max_y){
       if(sphere_positioned_at_top==false){
         y = max_y;
@@ -152,7 +157,6 @@ function scrollAnimation() {
         document.getElementById("sphere").style.top = (bottom_sphere_box.getBoundingClientRect().top).toString()+"px";
       }
 
-      console.log("here");
       if(sphere_zindex==3){
         document.getElementById("sphere").style.zIndex = "1";
         sphere_zindex=1;
@@ -163,8 +167,10 @@ function scrollAnimation() {
         $("#sphere").animate(
             {top: "0px", width: new_box_height*box_ratio, height: new_box_height}
             ,200,"swing");
+      document.getElementById("sphere").style.zIndex = "3";
       sphere_positioned_at_bottom = false;
-      console.log("ratio",box_ratio);
+      sphere_positioned_at_top = true;
+      //console.log("ratio",box_ratio);
   }
     
 }
