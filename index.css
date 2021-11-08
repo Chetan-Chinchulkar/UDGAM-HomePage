@@ -516,6 +516,32 @@ sup {
   padding-right: 1%;
 }
 
+/* -------------------------------------- arrows section css-------------------------------- */
+
+.arrow_cont {
+  /* display: inline-block; */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display: grid;
+  float: left;
+  width: 30%;
+  height: 320px;
+  box-sizing: border-box;
+}
+.bottom_sphere_cont {
+  /* display: inline-block; */
+  float: left;
+  width: 40%;
+  height: 320px;
+}
+.arrow_img {
+  width: 100%;
+  padding: 20%;
+}
+
+.right_arrows {
+  transform: rotate(180deg);
+}
+
 /* ############################################ footer css ########################################################## */
 
 .contactus {

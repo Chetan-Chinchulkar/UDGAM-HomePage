@@ -5,7 +5,15 @@
 let box = document.querySelector('#sphere');
 let box_width = box.offsetWidth;
 let box_height = box.offsetHeight;
+let box_ratio = box_width/box_height;
 console.log(box_width, box_height);
+
+var pointerX = 0;
+var pointerY = 0;
+onmousemove = function(e){
+    pointerX = e.clientX;
+    pointerY = e.clientY;
+}
 
 // Setup
 
@@ -95,40 +103,81 @@ function scaleMoon(scale) {
   moon.scale.z = scale/scale2;
 }
 
+var bottom_sphere_box = document.querySelector('.bottom_sphere_cont');
 var max_y = 100;
-function moveCamera() {
+var new_box_height = 66.4;
+var sphere_zindex = 1;
+var sphere_positioned_at_bottom = false;
+var sphere_positioned_at_top = false;
+function scrollAnimation() {
   //var t = document.body.getBoundingClientRect().top;
   var y = (window.scrollY/window.innerWidth)*100;
   //console.log(y);
-  if(y>60){document.getElementById("sphere").style.zIndex = "3";}
-  if(y<(max_y+20)&&y>max_y){
-      y = max_y;
+  if(y>60){document.getElementById("sphere").style.zIndex = "3"; sphere_zindex=3;}
+  if(y>max_y){
+      if(sphere_positioned_at_top==false){
+        y = max_y;
+        sphere_positioned_at_top = true;
+      }
   }
   if(y<=max_y){
     moon.rotation.x += 0.05 * -1;
     //moon.rotation.x = y * 0.15 * -1;
 
-
-    //moon.position.y = y * 0.388 + 5;
-
     box.style.top = (22 - y*22/max_y).toString() + '%';
     //var hw = (40 - y*30/max_y).toString() + '%'
     
-    var ratio = box_width/box_height;
-    var w = (box_width - ((box_width-ratio*66.4) * y/max_y)).toString() + 'px';
-    var h = (box_height - ((box_height-66.4) * y/max_y)).toString() + 'px';
+    
+    var w = (box_width - ((box_width-box_ratio*new_box_height) * y/max_y)).toString() + 'px';
+    var h = (box_height - ((box_height-new_box_height) * y/max_y)).toString() + 'px';
     box.style.width = w;
     box.style.height = h;
-    //box.style.transform
 
     //var scale = 1 + y * 0.014 * -1;
     //scaleMoon(scale);
+
   }
 
+  if(-1 * bottom_sphere_box.getBoundingClientRect().top > -200){
+      if(sphere_positioned_at_bottom == false){
+        var new_top = (bottom_sphere_box.getBoundingClientRect().top).toString()+"px";
+        console.log(new_top);
+        $("#sphere").animate(
+            {top: new_top, width: box_width, height: box_height}
+            ,200,"swing");
+        sphere_positioned_at_bottom = true;
+        sphere_positioned_at_top = false;
+      }
+      if(sphere_positioned_at_bottom == true){
+        document.getElementById("sphere").style.top = (bottom_sphere_box.getBoundingClientRect().top).toString()+"px";
+      }
+
+      console.log("here");
+      if(sphere_zindex==3){
+        document.getElementById("sphere").style.zIndex = "1";
+        sphere_zindex=1;
+      }
+  }
+
+  if(-1 * bottom_sphere_box.getBoundingClientRect().top < -200 && sphere_positioned_at_bottom == true){
+        $("#sphere").animate(
+            {top: "0px", width: new_box_height*box_ratio, height: new_box_height}
+            ,200,"swing");
+      sphere_positioned_at_bottom = false;
+      console.log("ratio",box_ratio);
+  }
+    
 }
 
-document.body.onscroll = moveCamera;
-moveCamera();
+
+
+  //console.log(document.querySelector('.bottom_sphere_cont').getBoundingClientRect().top,
+  //document.querySelector('body').getBoundingClientRect().top);
+
+
+
+document.body.onscroll = scrollAnimation;
+scrollAnimation();
 
 // Animation Loop
 
@@ -148,4 +197,40 @@ function animate() {
 }
 
 animate();
-moveCamera();
+
+var shldMoveArrows = false;
+document.querySelector('.bottom_sphere_cont').addEventListener("mousemove", function( event ) {
+    // highlight the mouseover target
+    /* event.target.style.border = "1px solid orange"; */
+    shldMoveArrows = true;
+    moveArrows();
+  }, false);
+
+  document.querySelector('.bottom_sphere_cont').addEventListener("mouseout", function( event ) {
+    // highlight the mouseover target
+    var x1 = document.getElementsByClassName("left_arrows");
+    for (var i = 0; i < x1.length; i++) {
+        x1[i].style.transform = "rotate(" + 0 + "deg)";
+    }
+    var x2 = document.getElementsByClassName("right_arrows");
+    for (var i = 0; i < x2.length; i++) {
+        x2[i].style.transform = "rotate(" + 180 + "deg)";
+    }
+    shldMoveArrows = false;
+  }, false);
+
+
+function moveArrows() {
+    //requestAnimationFrame(moveArrows);
+
+    var x = document.getElementsByClassName("arrow_img");
+    for (var i = 0; i < x.length; i++) {
+        var x_bound = x[i].getBoundingClientRect();
+        var horz = pointerX - (x_bound.left + x_bound.width/2);
+        var vert = pointerY - (x_bound.top + x_bound.height/2);
+        var angle = Math.atan2(vert, horz);
+        x[i].style.transform = "rotate(" + angle + "rad)";
+    }
+    //console.log(pointerX);
+
+    }
