@@ -3,13 +3,17 @@
 //import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 
-document.getElementById("bg_image").height = (document.querySelector("main").offsetHeight).toString() + "px";
 
 let box = document.querySelector('#sphere');
 let box_width = box.offsetWidth;
 let box_height = box.offsetHeight;
 let box_ratio = box_width/box_height;
 console.log(box_width, box_height);
+
+
+document.getElementById("bg_image").height = (document.querySelector("main").offsetHeight).toString() + "px";
+var title = document.getElementById("title").getBoundingClientRect();
+var initial_top = 100 * (title.top + title.height/2 - box_height /2) / window.innerHeight;
 
 var pointerX = 0;
 var pointerY = 0;
@@ -132,7 +136,7 @@ function scrollAnimation() {
     moon.rotation.x += 0.05 * -1;
     //moon.rotation.x = y * 0.15 * -1;
 
-    box.style.top = (22 - y*22/max_y).toString() + '%';
+    box.style.top = (initial_top - y*initial_top/max_y).toString() + '%';
     //var hw = (40 - y*30/max_y).toString() + '%'
     
     
