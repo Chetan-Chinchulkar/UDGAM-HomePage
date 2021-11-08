@@ -72,14 +72,17 @@ function addStar() {
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load('moon.jpg');
+/* const moonTexture = new THREE.TextureLoader().load('moon.jpg');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(120, 32, 32),
   new THREE.MeshStandardMaterial({
     map: moonTexture,
   })
-);
+); */
+const geometry = new THREE.SphereGeometry(120, 16, 16);
+const material = new THREE.MeshStandardMaterial({ color: 0xffffff , wireframe: true});
+const moon = new THREE.Mesh(geometry, material);
 scene.add(moon);
 
 //scaleMoon(16);
@@ -143,7 +146,7 @@ function scrollAnimation() {
 
   }
 
-  if(-1 * bottom_sphere_box.getBoundingClientRect().top > -200){
+  if(-1 * bottom_sphere_box.getBoundingClientRect().top > -400){
       if(sphere_positioned_at_bottom == false){
         var new_top = (bottom_sphere_box.getBoundingClientRect().top).toString()+"px";
         console.log(new_top);
@@ -163,7 +166,7 @@ function scrollAnimation() {
       }
   }
 
-  if(-1 * bottom_sphere_box.getBoundingClientRect().top < -200 && sphere_positioned_at_bottom == true){
+  if(-1 * bottom_sphere_box.getBoundingClientRect().top < -400 && sphere_positioned_at_bottom == true){
         $("#sphere").animate(
             {top: "0px", width: new_box_height*box_ratio, height: new_box_height}
             ,200,"swing");
