@@ -45,49 +45,77 @@ renderer.render(scene, camera);
 
 // Lights
 
-//const pointLight = new THREE.PointLight(0xffffff);
-//pointLight.position.set(5, 5, 5);
+const pointLight1 = new THREE.PointLight(0xffffff);
+pointLight1.position.set(40, 40, 200);
+
+/* const pointLight2 = new THREE.PointLight(0xffffff);
+pointLight2.position.set(-40, -40, 200); */
 
 const ambientLight = new THREE.AmbientLight(0xffffff);
-scene.add(/* pointLight, */ ambientLight);
+scene.add( /* pointLight1, */ /* pointLight2,  */ ambientLight);
+
+// Helpers
+
+const lightHelper = new THREE.PointLightHelper(pointLight1);
+scene.add(lightHelper/*,  gridHelper */);
+
+//const controls = new OrbitControls(camera, renderer.domElement);
 
 // const controls = new OrbitControls(camera, renderer.domElement);
 
-function addStar() {
-  const geometry = new THREE.SphereGeometry(0.25, 24, 24);
-  const material = new THREE.MeshStandardMaterial({ color: 0xffffff });
-  const star = new THREE.Mesh(geometry, material);
+/* let moon;
+let moonLoader = new THREE.GLTFLoader();
+moonLoader.load('grad_ball.gltf', (gltf) =>{
+  moon = gltf.scene;
+  var scale = 120;
+  moon.scale.set(scale,scale,scale);
+  scene.add(moon);
+  console.log('ball added');
 
-  const [x, y, z] = Array(3)
-    .fill()
-    .map(() => THREE.MathUtils.randFloatSpread(100));
 
-  star.position.set(x, y, z);
-  scene.add(star);
-}
 
-//Array(200).fill().forEach(addStar);
 
-// Background
+}); */
 
-//const spaceTexture = new THREE.TextureLoader().load('space.jpg');
-//const spaceTexture = new THREE.TextureLoader().load('bkgrd.png');
-//scene.background = spaceTexture;
+
+
+
+var texture = new THREE.TextureLoader().load('grad_ball.png')
+
+var uniforms = {
+  "tex": { value: texture }	
+};
+
+
+
+
+
+
 
 // Moon
 
-/* const moonTexture = new THREE.TextureLoader().load('moon.jpg');
+const moonTexture = new THREE.TextureLoader().load('grad_ball.png');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(120, 32, 32),
   new THREE.MeshStandardMaterial({
     map: moonTexture,
   })
-); */
-const geometry = new THREE.SphereGeometry(120, 16, 16);
+
+
+
+
+);
+/* const geometry = new THREE.SphereGeometry(120, 16, 16);
 const material = new THREE.MeshStandardMaterial({ color: 0xffffff , wireframe: true});
-const moon = new THREE.Mesh(geometry, material);
+const moon = new THREE.Mesh(geometry, material); */
+
+
 scene.add(moon);
+
+
+
+
 
 //scaleMoon(16);
 
@@ -99,6 +127,7 @@ scene.add(moon);
   moon.scale.y = scale/scale2;
   moon.scale.z = scale/scale2;
 } */
+
 
 var bottom_sphere_box = document.querySelector('.bottom_sphere_cont');
 var max_y = 100* (
@@ -246,4 +275,5 @@ function moveArrows() {
     }
     //console.log(pointerX);
 
-    }
+}
+
