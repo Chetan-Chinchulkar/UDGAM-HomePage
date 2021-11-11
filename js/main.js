@@ -45,23 +45,15 @@ renderer.render(scene, camera);
 
 // Lights
 
-const pointLight1 = new THREE.PointLight(0xffffff);
-pointLight1.position.set(40, 40, 200);
+const pointLight1 = new THREE.PointLight(0xaaaaaa);
+pointLight1.position.set(60, 60, 200);
 
 /* const pointLight2 = new THREE.PointLight(0xffffff);
 pointLight2.position.set(-40, -40, 200); */
 
 const ambientLight = new THREE.AmbientLight(0xffffff);
-scene.add( /* pointLight1, */ /* pointLight2,  */ ambientLight);
+scene.add( pointLight1,  /* pointLight2,  */ ambientLight);
 
-// Helpers
-
-const lightHelper = new THREE.PointLightHelper(pointLight1);
-scene.add(lightHelper/*,  gridHelper */);
-
-//const controls = new OrbitControls(camera, renderer.domElement);
-
-// const controls = new OrbitControls(camera, renderer.domElement);
 
 /* let moon;
 let moonLoader = new THREE.GLTFLoader();
@@ -80,13 +72,6 @@ moonLoader.load('grad_ball.gltf', (gltf) =>{
 
 
 
-var texture = new THREE.TextureLoader().load('grad_ball.png')
-
-var uniforms = {
-  "tex": { value: texture }	
-};
-
-
 
 
 
@@ -94,10 +79,10 @@ var uniforms = {
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load('grad_ball.png');
+const moonTexture = new THREE.TextureLoader().load('test3.png');
 
 const moon = new THREE.Mesh(
-  new THREE.SphereGeometry(120, 32, 32),
+  new THREE.SphereGeometry(120, 64, 64),
   new THREE.MeshStandardMaterial({
     map: moonTexture,
   })
@@ -185,13 +170,11 @@ function scrollAnimation() {
         console.log(new_top);
         $("#sphere").animate(
             {top: new_top, width: box_width, height: box_height}
-            ,200,"swing");
+            ,400,"swing");
         sphere_positioned_at_bottom = true;
         sphere_positioned_at_top = false;
       }
-      if(sphere_positioned_at_bottom == true){
-        document.getElementById("sphere").style.top = (bottom_sphere_box.getBoundingClientRect().top).toString()+"px";
-      }
+      
 
       if(sphere_zindex==3){
         document.getElementById("sphere").style.zIndex = "1";
@@ -202,7 +185,7 @@ function scrollAnimation() {
   if(-1 * bottom_sphere_box.getBoundingClientRect().top < -400 && sphere_positioned_at_bottom == true){
         $("#sphere").animate(
             {top: "0px", width: new_box_height*box_ratio, height: new_box_height}
-            ,200,"swing");
+            ,400,"swing");
       document.getElementById("sphere").style.zIndex = "3";
       sphere_positioned_at_bottom = false;
       sphere_positioned_at_top = true;
@@ -224,12 +207,18 @@ scrollAnimation();
 // Animation Loop
 
 function animate() {
+
+  if(sphere_positioned_at_bottom == true){
+    document.getElementById("sphere").style.top = (bottom_sphere_box.getBoundingClientRect().top).toString()+"px";
+  }
   requestAnimationFrame(animate);
 
+  //moon.rotation.y = -3.14/2;
 
-  moon.rotation.x += 0.001;
-  moon.rotation.y += 0.001;
-  moon.rotation.z += 0.001;
+
+  moon.rotation.x += 0.002;
+  //moon.rotation.y += 0.001;
+  //moon.rotation.z += 0.001;
 
   //moon.rotation.x += 0.005;
 

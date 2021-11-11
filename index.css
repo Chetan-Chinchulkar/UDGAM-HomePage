@@ -686,7 +686,7 @@ sup {
 
 .arrow_cont {
   /* display: inline-block; */
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   display: grid;
   float: left;
   width: 30%;

@@ -1787,9 +1787,17 @@
                 <img class="arrow_img left_arrows" src="arrow.svg" alt="Arrow">
                 <img class="arrow_img left_arrows" src="arrow.svg" alt="Arrow">
                 <img class="arrow_img left_arrows" src="arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="arrow.svg" alt="Arrow">
             </div>
             <div class="bottom_sphere_cont"></div>
             <div class="arrow_cont">
+                <img class="arrow_img right_arrows" src="arrow.svg" alt="Arrow">
+                <img class="arrow_img right_arrows" src="arrow.svg" alt="Arrow">
+                <img class="arrow_img right_arrows" src="arrow.svg" alt="Arrow">
+                <img class="arrow_img right_arrows" src="arrow.svg" alt="Arrow">
                 <img class="arrow_img right_arrows" src="arrow.svg" alt="Arrow">
                 <img class="arrow_img right_arrows" src="arrow.svg" alt="Arrow">
                 <img class="arrow_img right_arrows" src="arrow.svg" alt="Arrow">
@@ -2020,6 +2028,40 @@
     </script>
 
 <script type="module" src="js/main.js"></script>
+
+<script id="vertex_shader" type="x-shader/x-vertex">
+
+    varying vec3 vNormal;
+    
+    void main() {
+    
+        vNormal = normal;
+    
+        gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+    
+    }
+    
+</script>
+    
+<script id="fragment_shader" type="x-shader/x-fragment">
+
+    uniform sampler2D tex;
+
+    varying vec3 vNormal;
+
+    void main() {
+
+        vec2 uv = normalize( vNormal ).xy * 0.5 + 0.5;
+
+        vec3 color = texture2D( tex, uv ).rgb;
+
+        if ( vNormal.z < - 0.85 ) color = vec3( 0.777, 0.74, 0.74 ); // back of eye
+        
+        gl_FragColor = vec4( color, 1.0 );
+
+    }
+
+</script>
 
 </body>
 
